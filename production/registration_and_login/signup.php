@@ -1,3 +1,47 @@
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$database = 'project';
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}else{
+echo "Connected successfully";}
+
+    if(isset($_POST['signup'])){
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
+        $number = $_POST['number'];
+        $disease_type = $_POST['disease_type'];
+
+        echo $name;
+        echo "dsddnjnejfneienfifnmwfwemf";
+
+
+        $sql = "INSERT INTO user_info (name, email, pass, number, disease_type)
+        VALUES ('$name', '$email', '$pass', $number, $disease_type)";
+        
+        if ($conn->query($sql) === TRUE) {
+          echo "<h1>New record created successfully</h1>";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+        
+        
+    }
+    
+
+    $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,36 +71,33 @@
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="الاسم" />
+                                <input type="text" name="name" id="name" placeholder="الاسم" required minlength="4" maxlength="25"/>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="الايميل" />
+                                <input type="email" name="email" id="email" placeholder="الايميل" required/>
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="الرقم السري" />
+                                <input type="password" name="pass" id="pass" placeholder="الرقم السري" required />
                             </div>
-                            <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="اعاده ادخال الرقم السري" />
-                            </div>
+                        
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1"><strong>فئه المرض</strong></label>
                                 
                                 <div class="form-group">
-                                    <label for="Number"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="Number" id="Number" placeholder="رقم الهاتف" />
+                                    <label for="number"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                    <input type="text" name="number" id="number" placeholder="رقم الهاتف" required/>
                                 </div>
                                 <br>
                                 <br>
                                 <br>
                                 <br>
-                                <select name="type" class="form-control form-control-lg" id="exampleFormControlSelect1">
-                                    <option value="1">1</option>
+                                <select name="disease_type" class="form-control form-control-lg" id="exampleFormControlSelect1">
+                                    <option value="">please select </option>
+                                    <option value="1" selected>1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                    <option value="4">4</option>
                                 </select>
                             </div>
                             <div class="form-group">

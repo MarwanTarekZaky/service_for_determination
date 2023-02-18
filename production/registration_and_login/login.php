@@ -1,3 +1,74 @@
+<?php
+
+session_start();
+
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$database = 'project';
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "Connected successfully";
+}
+
+if (isset($_POST['signin'])) {
+
+    $name = $_POST['name'];
+    $pass = $_POST['pass'];
+
+
+    $sql = "SELECT * FROM user_info WHERE name='$name' AND pass='$pass' ";
+
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) === 1) {
+
+        $row = mysqli_fetch_assoc($result);
+
+        if ($row['name'] === $name && $row['pass'] === $pass) {
+
+            echo "<h1>Logged in!</h1>";
+
+            $_SESSION['name'] = $row['name'];
+
+            $_SESSION['id'] = $row['id'];
+
+            header("Location: ../home/index.php");
+
+            exit();
+
+        } else {
+
+            echo "<h1>Incorect User name or password</h1>";
+            // header("Location: index.php?error=Incorect User name or password");
+
+            exit();
+
+        }
+    } else {
+
+        echo "<h1>Incorect User name or password</h1>";
+        //header("Location: index.php?error=Incorect User name or password");
+
+        exit();
+
+    }
+
+
+
+
+}
+
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +101,12 @@
                         <h2 class="form-title">تسجيل الدخول</h2>
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
-                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="اسم المستخدم" />
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="اسم المستخدم" required />
                             </div>
                             <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="الرقم السري" />
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="الرقم السري" required />
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
