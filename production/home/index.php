@@ -50,29 +50,29 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">الصفحه الرئيسيه</a>
-                    <a href="about.html" class="nav-item nav-link active">نبذه عن المركز</a>
-                    <a href="class.html" class="nav-item nav-link">البرامج الدراسيه</a>
-                    <a href="team.html" class="nav-item nav-link">اطباء المركز</a>
-                    <a href="gallery.html" class="nav-item nav-link">صور المركز</a>
+                    <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
+                    <a href="about.php" class="nav-item nav-link active">نبذه عن المركز</a>
+                    <a href="class.php" class="nav-item nav-link">البرامج الدراسيه</a>
+                    <a href="team.php" class="nav-item nav-link">اطباء المركز</a>
+                    <a href="gallery.php" class="nav-item nav-link">صور المركز</a>
                     <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
                     <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
                     <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">اعاده التاهيل</a>
-                            <a href="single.html" class="dropdown-item">اخبار المركز</a>
-                            <a href="examples.html" class="dropdown-item">اسئله</a>
-                            <a href="comments.html" class="dropdown-item">ملاحظات</a>
-                            <a href="assignment.html" class="dropdown-item">التسليمات</a>
-                            <a href="progress.html" class="dropdown-item">الاداء</a>
-                            <a href="learning.html" class="dropdown-item">التعلم</a>
+                            <a href="blog.php" class="dropdown-item">اعاده التاهيل</a>
+                            <a href="single.php" class="dropdown-item">اخبار المركز</a>
+                            <a href="examples.php" class="dropdown-item">اسئله</a>
+                            <a href="comments.php" class="dropdown-item">ملاحظات</a>
+                            <a href="assignment.php" class="dropdown-item">التسليمات</a>
+                            <a href="progress.php" class="dropdown-item">الاداء</a>
+                            <a href="learning.php" class="dropdown-item">التعلم</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                    <a href="contact.php" class="nav-item nav-link">تواصل معنا</a>
                 </div>
-                <a href="donation.html" class="btn btn-primary px-4">التبرع للمركز</a>
+                <a href="donation.php" class="btn btn-primary px-4">التبرع للمركز</a>
             </div>
         </nav>
     </div>
