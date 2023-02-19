@@ -193,7 +193,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             </div>
         </div>
     </div>
-    <!-- Facilities Start -->
+    <!-- Facilities ِEnd -->
 
 
     <!-- Team Start -->
