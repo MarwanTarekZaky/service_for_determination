@@ -72,7 +72,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     </div>
                     <a href="contact.php" class="nav-item nav-link">تواصل معنا</a>
                 </div>
-                <a href="donation.php" class="btn btn-primary px-4">التبرع للمركز</a>
+                <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="btn btn-primary px-4">التبرع للمركز</a>
             </div>
         </nav>
     </div>

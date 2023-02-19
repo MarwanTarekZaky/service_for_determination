@@ -76,7 +76,7 @@ header("Location: ../registration_and_login/login.php");
                     </div>
                     <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
                 </div>
-                <a href="donation.html" class="btn btn-primary px-4">التبرع للمركز</a>
+                <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="btn btn-primary px-4">التبرع للمركز</a>
             </div>
         </nav>
     </div>
