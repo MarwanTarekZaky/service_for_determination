@@ -56,7 +56,7 @@ header("Location: ../registration_and_login/login.php");
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link">الصفحه الرئيسيه</a>
                     <a href="../registration_and_login/delete_user.php" class="nav-item nav-link">حذف مستخدم</a>
-                    <a href="gallery.html" class="nav-item nav-link">صور المركز</a>
+                   
                     <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
                     <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
                     <!-- <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a> -->
