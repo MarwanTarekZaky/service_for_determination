@@ -2,7 +2,37 @@
 
 session_start();
 
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$database = 'project';
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "Connected successfully";
+}
+
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
+
+
+    $sql = "SELECT * FROM events ORDER BY id DESC LIMIT 1";
+
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        
+        $row = $result->fetch_assoc();
+            echo "Record fetched successfully";
+           echo $row['author_name'];
+           echo $row['para1'];
+        
+    }
+
 
     ?>
 
@@ -72,7 +102,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         </div>
                         <a href="contact.php" class="nav-item nav-link">تواصل معنا</a>
                     </div>
-                    <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="btn btn-primary px-4">التبرع للمركز</a>
+                    <a href="https://form.123formbuilder.com/6371643/auction-donation-form"
+                        class="btn btn-primary px-4">التبرع للمركز</a>
                 </div>
             </nav>
         </div>
@@ -108,11 +139,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     </div>
                     <div class="mb-5">
                         <img class="img-fluid rounded w-100 mb-4" src="img/detail.jpg" alt="Image">
-                        <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
-                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam consetetur
-                            eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit gubergren dolores et,
-                            consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea sea no sed dolores diam
-                            nonumy, gubergren sit stet no diam kasd vero.</p>
+                        <p><?php  echo $row['para1']; ?></p>
                         <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
                             consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
                             sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et. Consetetur
@@ -149,15 +176,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                     <!-- Related Post -->
                     <div class="mb-5 mx-n3">
-                        <h2 class="mb-4 ml-3">Related Post</h2>
+                        <h2 class="mb-4 ml-3">منشورات ذات صله</h2>
                         <div class="owl-carousel post-carousel position-relative">
                             <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3">
                                 <img class="img-fluid" src="img/post-1.jpg" style="width: 80px; height: 80px;">
                                 <div class="pl-3">
-                                    <h5 class="">Diam amet eos at no eos</h5>
+                                    <h5 class="">الأسلوب المعرفي cognitive style</h5>
                                     <div class="d-flex">
-                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
+                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
+                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> cognitive
+                                            style</small>
                                         <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                     </div>
                                 </div>
@@ -165,10 +193,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3">
                                 <img class="img-fluid" src="img/post-2.jpg" style="width: 80px; height: 80px;">
                                 <div class="pl-3">
-                                    <h5 class="">Diam amet eos at no eos</h5>
+                                    <h5 class="">المضطربون انفعاليا emotionally disturbed </h5>
                                     <div class="d-flex">
-                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
+                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
+                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> emotionally
+                                            disturbed</small>
                                         <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                     </div>
                                 </div>
@@ -176,10 +205,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3">
                                 <img class="img-fluid" src="img/post-3.jpg" style="width: 80px; height: 80px;">
                                 <div class="pl-3">
-                                    <h5 class="">Diam amet eos at no eos</h5>
+                                    <h5 class="">التأهيل Habilitaion</h5>
                                     <div class="d-flex">
-                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
+                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
+                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> Habilitaion</small>
                                         <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                     </div>
                                 </div>
@@ -192,11 +221,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         <h2 class="mb-4"></h2>
                         <div class="media mb-4">
                             <!-- <img src="img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1" style="width: 45px;">
-                            <div class="media-body">
-                                <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                                <button class="btn btn-sm btn-light">Reply</button>
-                            </div> -->
+                                <div class="media-body">
+                                    <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
+                                    <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
+                                    <button class="btn btn-sm btn-light">Reply</button>
+                                </div> -->
                         </div>
 
                     </div>
@@ -208,7 +237,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <!-- Author Bio -->
                     <div class="d-flex flex-column text-center bg-primary rounded mb-5 py-5 px-4">
-                        <img src="img/user.jpg" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;">
+                        <!-- <img src="img/user.jpg" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;"> -->
                         <h3 class="text-secondary mb-3">John Doe</h3>
                         <p class="text-white m-0">Conset elitr erat vero dolor ipsum et diam, eos dolor lorem ipsum, ipsum
                             ipsum sit no ut est. Guber ea ipsum erat kasd amet est elitr ea sit.</p>
@@ -216,39 +245,31 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                     <!-- Search Form -->
                     <div class="mb-5">
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control form-control-lg" placeholder="Keyword">
-                                <div class="input-group-append">
-                                    <span class="input-group-text bg-transparent text-primary"><i
-                                            class="fa fa-search"></i></span>
-                                </div>
-                            </div>
-                        </form>
+
                     </div>
 
                     <!-- Category List -->
                     <div class="mb-5">
-                        <h2 class="mb-4">Categories</h2>
+                        <h2 class="mb-4">الفئات</h2>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">Web Design</a>
+                                <a href="">الإعاقة العقلية Mental Retardation</a>
                                 <span class="badge badge-primary badge-pill">150</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">Web Development</a>
+                                <a href="">صعوبات التعلم Learing Disabilities </a>
                                 <span class="badge badge-primary badge-pill">131</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">Online Marketing</a>
+                                <a href="">متعددو الإعاقات multihandicapped</a>
                                 <span class="badge badge-primary badge-pill">78</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">Keyword Research</a>
+                                <a href=""> التشخيص التربوي Educational Diagnosis</a>
                                 <span class="badge badge-primary badge-pill">56</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">Email Marketing</a>
+                                <a href="">اختصاصي العلاج التربوي Educational Therapist</a>
                                 <span class="badge badge-primary badge-pill">98</span>
                             </li>
                         </ul>
@@ -261,14 +282,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                     <!-- Recent Post -->
                     <div class="mb-5">
-                        <h2 class="mb-4">Recent Post</h2>
+                        <h2 class="mb-4">اخر المنشورات</h2>
                         <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3">
                             <img class="img-fluid" src="img/post-1.jpg" style="width: 80px; height: 80px;">
                             <div class="pl-3">
-                                <h5 class="">Diam amet eos at no eos</h5>
+                                <h5 class="">التأهيل Habilitaion</h5>
                                 <div class="d-flex">
-                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
+                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
+                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> Habilitaion</small>
                                     <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                 </div>
                             </div>
@@ -276,10 +297,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3">
                             <img class="img-fluid" src="img/post-2.jpg" style="width: 80px; height: 80px;">
                             <div class="pl-3">
-                                <h5 class="">Diam amet eos at no eos</h5>
+                                <h5 class="">المضطربون انفعاليا emotionally disturbed </h5>
                                 <div class="d-flex">
-                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
+                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
+                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> emotionally
+                                        disturbed</small>
                                     <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                 </div>
                             </div>
@@ -287,10 +309,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3">
                             <img class="img-fluid" src="img/post-3.jpg" style="width: 80px; height: 80px;">
                             <div class="pl-3">
-                                <h5 class="">Diam amet eos at no eos</h5>
+                                <h5 class="">الأسلوب المعرفي cognitive style</h5>
                                 <div class="d-flex">
-                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
+                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
+                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> cognitive style</small>
                                     <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                 </div>
                             </div>
@@ -306,12 +328,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="mb-5">
                         <h2 class="mb-4">Tag Cloud</h2>
                         <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-outline-primary m-1">Design</a>
-                            <a href="" class="btn btn-outline-primary m-1">Development</a>
-                            <a href="" class="btn btn-outline-primary m-1">Marketing</a>
-                            <a href="" class="btn btn-outline-primary m-1">SEO</a>
-                            <a href="" class="btn btn-outline-primary m-1">Writing</a>
-                            <a href="" class="btn btn-outline-primary m-1">Consulting</a>
+                            <a href="" class="btn btn-outline-primary m-1">التعزيز المتقطع / الجزئي</a>
+                            <a href="" class="btn btn-outline-primary m-1">غرفة لقياس السمع</a>
+                            <a href="" class="btn btn-outline-primary m-1">التدرب على السلوك</a>
+                            <a href="" class="btn btn-outline-primary m-1">تحليل المهمة</a>
+                            <a href="" class="btn btn-outline-primary m-1">الأسلوب المعرفي</a>
+                            <a href="" class="btn btn-outline-primary m-1">التخلف النمائي</a>
                         </div>
                     </div>
 
@@ -334,72 +356,77 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
 
         <!-- Footer Start -->
-    
-        <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
-                    <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-white">للتواصل</span>
-                </a>
-                <p>اداره المركز تسعد للتواصل مع حضراتكم و متابع كافه انشطه الطلبه عبر شبكه التواصل الاجتماعي خاصتنا</p>
-                <div class="d-flex justify-content-start mt-4">
-                   
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="https://www.facebook.com/Center.altahsse"><i class="fab fa-facebook-f"></i></a>
-                  
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">ابقي علي تواصل</h3>
-                <div class="d-flex">
-                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
-                    <div class="pl-3">
-                        <h5 class="text-white">العنوان</h5>
-                        <p>اطفيح , الجيزه , مصر</p>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <h4 class="fa fa-envelope text-primary"></h4>
-                    <div class="pl-3">
-                        <h5 class="text-white">البريد الالكتروني</h5>
-                        <p>serviceDetermination@example.com</p>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <h4 class="fa fa-phone-alt text-primary"></h4>
-                    <div class="pl-3">
-                        <h5 class="text-white">رقم الهاتف</h5>
-                        <p>+2001119584725</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">وصول سريع</h3>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>الصفحه الرئيسيه</a>
-                    <a class="text-white mb-2" href="about.php"><i class="fa fa-angle-right mr-2"></i>نبذه عنا</a>
-                    <a class="text-white mb-2" href="class.php"><i class="fa fa-angle-right mr-2"></i>البرامج العلاجيه</a>
-                    <a class="text-white mb-2" href="team.php"><i class="fa fa-angle-right mr-2"></i>اساتذنا</a>
-                    <a class="text-white mb-2" href="donation.php"><i class="fa fa-angle-right mr-2"></i>التبرع</a>
-                    <a class="text-white" href="contact.php"><i class="fa fa-angle-right mr-2"></i>تواصل معنا</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">
 
-                </h3>
-                
+        <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                        style="font-size: 40px; line-height: 40px;">
+                        <i class="flaticon-043-teddy-bear"></i>
+                        <span class="text-white">للتواصل</span>
+                    </a>
+                    <p>اداره المركز تسعد للتواصل مع حضراتكم و متابع كافه انشطه الطلبه عبر شبكه التواصل الاجتماعي خاصتنا</p>
+                    <div class="d-flex justify-content-start mt-4">
+
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                            style="width: 38px; height: 38px;" href="https://www.facebook.com/Center.altahsse"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">ابقي علي تواصل</h3>
+                    <div class="d-flex">
+                        <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">العنوان</h5>
+                            <p>اطفيح , الجيزه , مصر</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-envelope text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">البريد الالكتروني</h5>
+                            <p>serviceDetermination@example.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-phone-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">رقم الهاتف</h5>
+                            <p>+2001119584725</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">وصول سريع</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>الصفحه
+                            الرئيسيه</a>
+                        <a class="text-white mb-2" href="about.php"><i class="fa fa-angle-right mr-2"></i>نبذه عنا</a>
+                        <a class="text-white mb-2" href="class.php"><i class="fa fa-angle-right mr-2"></i>البرامج
+                            العلاجيه</a>
+                        <a class="text-white mb-2" href="team.php"><i class="fa fa-angle-right mr-2"></i>اساتذنا</a>
+                        <a class="text-white mb-2" href="donation.php"><i class="fa fa-angle-right mr-2"></i>التبرع</a>
+                        <a class="text-white" href="contact.php"><i class="fa fa-angle-right mr-2"></i>تواصل معنا</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">
+
+                    </h3>
+
+                </div>
+            </div>
+            <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
+                <p class="m-0 text-center text-white">
+                    &copy; <a class="text-primary font-weight-bold" href="https://www.facebook.com/Center.altahsse">التخصصي
+                        للتخاطب</a>
+                    كل الحقوق محفوظه لدي كليه الحاسبات و الذكاء الاصطناعي جامعه حلوان
+                    <a class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">كليه الحاسبات</a>
+                </p>
             </div>
         </div>
-        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
-            <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="https://www.facebook.com/Center.altahsse">التخصصي للتخاطب</a>
-                كل الحقوق محفوظه لدي كليه الحاسبات و الذكاء الاصطناعي جامعه حلوان
-                <a class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">كليه الحاسبات</a>
-            </p>
-        </div>
-    </div>
         <!-- Footer End -->
 
 
@@ -425,7 +452,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
     </html>
 
-<?php
+    <?php
 
 } else {
 

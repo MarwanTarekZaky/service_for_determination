@@ -4,169 +4,273 @@ session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
- ?>
 
-<!DOCTYPE html>
-<html lang="en">
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$database = 'project';
 
-<head>
-    <meta charset="utf-8">
-    <title>التخصصي للتخاطب</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}else{
+echo "Connected successfully";}
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+if(isset($_POST['set_event'])){
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    $para1 = $_POST['para1'];
+    $para2 = $_POST['para2'];
+    $h1 = $_POST['h1'];
+    $bigpara1 = $_POST['bigpara1'];
+    $h2 = $_POST['h2'];
+    $bigpara2 = $_POST['bigpara2'];
+    $author_name = $_POST['author_name'];
+    $abbrev = $_POST['abbrev'];
+    $plaintext = $_POST['plaintext'];
+    $type_number = $_POST['type_number'];
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    $sql = "INSERT INTO events (para1, para2, h1, bigpara1, h2, bigpara2, author_name, abbrev, plaintext, type_number)
+VALUES ('$para1', '$para2', '$h1', '$bigpara1', '$h2', '$bigpara2', '$author_name', '$abbrev', '$plaintext', $type_number)";
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+if ($conn->query($sql) === TRUE) {
+    echo "New event created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
 
-<body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear"></i>
-                <span class="text-primary">التخصصي للتخاطب</span>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
-                    <a href="../registration_and_login/delete_user.php" class="nav-item nav-link">حذف مستخدم</a>
-                    
-                    <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                    <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
-                    <!-- <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a> -->
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.php" class="dropdown-item">اعاده التاهيل</a>
-                            <a href="single.php" class="dropdown-item">اخبار المركز</a>
-                            <a href="examples.php" class="dropdown-item">اسئله</a>
-                            <a href="comments.php" class="dropdown-item">ملاحظات</a>
-                            <a href="assignment.php" class="dropdown-item">التسليمات</a>
-                            <a href="progress.php" class="dropdown-item">الاداء</a>
-                            <a href="learning.php" class="dropdown-item">التعلم</a>
+
+}
+  $conn->close();
+    ?>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>التخصصي للتخاطب</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free HTML Templates" name="keywords">
+        <meta content="Free HTML Templates" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Flaticon Font -->
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-light position-relative shadow">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+                <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                    <i class="flaticon-043-teddy-bear"></i>
+                    <span class="text-primary">التخصصي للتخاطب</span>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav font-weight-bold mx-auto py-0">
+                        <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
+                        <a href="../registration_and_login/delete_user.php" class="nav-item nav-link">حذف مستخدم</a>
+
+                        <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
+                        <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
+                        <!-- <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="blog.php" class="dropdown-item">اعاده التاهيل</a>
+                                <a href="single.php" class="dropdown-item">اخبار المركز</a>
+                                <a href="examples.php" class="dropdown-item">اسئله</a>
+                                <a href="comments.php" class="dropdown-item">ملاحظات</a>
+                                <a href="assignment.php" class="dropdown-item">التسليمات</a>
+                                <a href="progress.php" class="dropdown-item">الاداء</a>
+                                <a href="learning.php" class="dropdown-item">التعلم</a>
+                            </div>
                         </div>
+
                     </div>
-                    
+
                 </div>
-                
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+            </nav>
+        </div>
+        <!-- Navbar End -->
 
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">اخر الانشطه</h3>
-            <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
-                <p class="m-0 px-2">/</p>
-                <p class="m-0">نشاطات المركز</p>
+        <!-- Header Start -->
+        <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-3 font-weight-bold text-white">اخر الانشطه</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0 px-2">/</p>
+                    <p class="m-0">نشاطات المركز</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
+        <!-- Header End -->
 
 
-    <!-- Detail Start -->
-    
-                <!-- Related Post -->
-                
-                    
+        <!-- Detail Start -->
 
-                <!-- Comment List -->
-                
-                     
-
-                <!-- Comment Form -->
-                
-
-           
-                <!-- Author Bio -->
-                
-
-                <!-- Search Form -->
-                
-
-                <!-- Category List -->
-               
-
-                <!-- Single Image -->
-               
-                <!-- Recent Post -->
-             
-                <!-- Single Image -->
-               
-                <!-- Tag Cloud -->
-              
-
-                <!-- Single Image -->
-               
-
-                <!-- Plain Text -->
-                
-    <!-- Detail End -->
+        <!-- Related Post -->
 
 
-    <!-- Footer Start -->
-   
-    
-    <!-- Footer End -->
+
+        <!-- Comment List -->
+
+        <h1
+            style="display: block; width: 100%; margin: 50px; font-family: 'Times New Roman', Times, serif; color: cadetblue;">
+            Enter the event's content</h1>
+
+        <!-- Comment Form -->
+        <!--form -->
+
+        <form style="margin: 50px;" method="post">
+
+            <div class="form-group">
+                <label for="para1">First paragraph</label>
+                <textarea name="para1" class="form-control" id="para1" rows="3"></textarea>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="para1">Second paragraph</label>
+                <textarea name="para2" class="form-control" id="para2" rows="3"></textarea>
+            </div>
+            <br>
+            <input name="h1" class="form-control form-control-lg" type="text" placeholder="first heading">
+
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="bigpara1">First big paragraph</label>
+                <textarea name="bigpara1" class="form-control" id="bigpara1" rows="6"></textarea>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="h2">Second heading</label>
+                <input name="h2" type="text" class="form-control" id="h2" placeholder="Second heading">
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="bigpara2">Second big paragraph</label>
+                <textarea name="bigpara2" class="form-control" id="bigpara2" rows="6"></textarea>
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="author_name"></label>
+                <input name="author_name" type="text" class="form-control" id="author_name" placeholder="Author name">
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="abbrev">Abbreviation</label>
+                <textarea name="abbrev" class="form-control" id="abbrev" rows="3"></textarea>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="plaintext">plain text</label>
+                <textarea name="plaintext" class="form-control" id="plaintext" rows="3"></textarea>
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label for="type_number"></label>
+                <input name="type_number" type="number" class="form-control" id="type_number" placeholder="Event type">
+            </div>
+
+            <br><br>
+            <button name="set_event" type="submit" class="btn btn-primary">Submit Event</button>
+        </form>
+
+        <!--form end  -->
+
+        <!-- Author Bio -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <!-- Search Form -->
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <!-- Category List -->
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+        <!-- Single Image -->
 
-</html>
+        <!-- Recent Post -->
 
-<?php 
+        <!-- Single Image -->
 
-}else{
+        <!-- Tag Cloud -->
 
-     header("Location: ../registration_and_login/login.php");
 
-     exit();
+        <!-- Single Image -->
+
+
+        <!-- Plain Text -->
+
+        <!-- Detail End -->
+
+
+        <!-- Footer Start -->
+
+
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+    </html>
+
+    <?php
+
+} else {
+
+    header("Location: ../registration_and_login/login.php");
+
+    exit();
 
 }
 
- ?>
+?>
