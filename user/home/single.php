@@ -25,12 +25,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        
+
         $row = $result->fetch_assoc();
-            echo "Record fetched successfully";
-           echo $row['author_name'];
-           echo $row['para1'];
-        
+        echo "Record fetched successfully";
+        echo $row['author_name'];
+        echo $row['para1'];
+
     }
 
 
@@ -115,7 +115,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
                 <h3 class="display-3 font-weight-bold text-white">اخر الانشطه</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0"><a class="text-white" href="index.php">الصفحه الرئيسيه</a></p>
                     <p class="m-0 px-2">/</p>
                     <p class="m-0">نشاطات المركز</p>
                 </div>
@@ -139,39 +139,41 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     </div>
                     <div class="mb-5">
                         <img class="img-fluid rounded w-100 mb-4" src="img/detail.jpg" alt="Image">
-                        <p><?php  echo $row['para1']; ?></p>
-                        <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
-                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
-                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et. Consetetur
-                            no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor elitr, stet et no
-                            diam sit. Dolor erat justo dolore sit invidunt.</p>
-                        <h2 class="mb-4">Est dolor lorem et ea</h2>
+                        <p>يوض متخصصو السمعيات لدينا بزراعة القوقعة للطفل ىف سن مبكرة حيث ييٍ
+                            تكون النتائج أفضل نظ ًرا لأنها تساعد دماغ الطفل عل الوصول إلى الأصوات￼
+                            اللازمة لتعلم المهارات اللغوية .ويعتمد أصغر سن يمكن خضوع الطفل فيه￼￼
+                            لجراحة زراعة القوقعة عل حجم الطفل وصحته؛ حيث يصل غالبية الأطفال إلى￼
+                            الحجم المناسب لإجراء تلك الجراحة ىف عمر ي رباوح من 10 إلى 12 شه ًرا.</p>
+                        <p>تلعب عملية التأهيل والتدريب بعد الجراحة دوًرا حيوًيا ىف تحقيق أفضل نتائج ي
+                            ممكنة فيما يتعلق بالقدرة عل السمع. بالنسبة للمر ىض الوافدين من الخارج￼
+                            لإجراء الجراحة ىف مدينة بلتيمور، فنحن نوض بالمتابعة أو ًلا مع متخصصى￼ ييي
+                            ىىىى￼
+                            السمعيات وأخصائ رن التأهيل التابع ري لمستشف جونز هوبكب خلال الشهور
+                            الأولى بعد إجراء الجراحة .وبعد ذلك، سنعمل مع المر ىض لمساعدتهم ىف إيجاد￼ ي
+                            متخصصى سمعيات وأخصائرن تأهيل سمع ىف بلادهم لتولى رعايتهم عل المدى ييييي
+                            ي
+                            الطويل.</p>
+                        <h2 class="mb-4">متلازمه داون</h2>
                         <img class="img-fluid rounded w-50 float-left mr-4 mb-3" src="img/blog-1.jpg" alt="Image">
-                        <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est
-                            sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum
-                            eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam
-                            lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren
-                            erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                            sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata
-                            dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod
-                            kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd
-                            diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren
-                            ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est
-                            accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos
-                            magna, justo gubergren labore sit voluptua eos.</p>
-                        <h3 class="mb-4">Est dolor lorem et ea</h3>
+                        <p> ىف علاج متلازمة داون ، تخلق أنشطة العلاج ال رن تق ربب من كونها شاملة ىف
+ييي 
+المواقف الجسدية والاجتماعية والنفسية خطة تقييم وعلاج واسعة النطاق
+تخطط أي ًضا لحياة الفرد المستقبلية. تخلق أنشطة العلاج بالأرجح ال رن ي
+تهدف إلى أقصى درجة من الاستقلال خطة علاجية يمكن أن تتكيف مع
+إمكانات العمل والتطبيق ال رن يمكن العثور عليها وتطويرها وتكييفها ىف علاج ىيي
+متلازمة داون ، بما ف ذلك الأفراد ، مع أفضل المهارات. يتم وضع خطة ىي
+علاج واسعة ف علاج متلازمة داون ، بالتواصل مع الأسرة ومقدم الرعاية يي
+الفردية.</p>
+                        <h3 class="mb-4">ال ربنامج التأهيل زراعة القوقعة</h3>
                         <img class="img-fluid rounded w-50 float-right ml-4 mb-3" src="img/blog-2.jpg" alt="Image">
-                        <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est
-                            sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum
-                            eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam
-                            lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren
-                            erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                            sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata
-                            dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod
-                            kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd
-                            diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren
-                            ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est
-                            accusam labore eirmod vero et voluptua. Amet labore clita duo et no.</p>
+                        <p>تتضمن عملية السمع أكبر من مجرد التعرف عل الأصوات فحسب — فما نستمع
+إليه يؤثر عل قدرتنا عل التعلم وكيفية إدراكنا للعالم من حولنا بالنسبة للبالغ
+قد يؤثر فقدان السمع الحاد عل تفاعلهم الاجتماع، وأدائهم الوظيفي، وصحتهم￼
+العامة.أمابالنسبة للصغار ،فقد يتسبب فقدانا لسمع الحاد ىفإعاقة مسار النموي
+الطبي علي لمهاراتهم اللغوية والاجتماعية تعد زراعة القوقعة وسيلة لعلاج المصاب
+بالصمم أو ضعف السمع .وهذه القوقعة عبارة عن جهاز إلك ربو ىث صغ رب الحجم
+يعمل عل قياسا لأصوات ومعالجتها،ثم تحفربالعصب السمعي لتوصيل الصوت
+للشخص الذي لا يمكنه سماع الأصوات بطريقة أخرى</p>
                     </div>
 
                     <!-- Related Post -->
@@ -221,11 +223,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         <h2 class="mb-4"></h2>
                         <div class="media mb-4">
                             <!-- <img src="img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1" style="width: 45px;">
-                                <div class="media-body">
-                                    <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                    <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                                    <button class="btn btn-sm btn-light">Reply</button>
-                                </div> -->
+                                    <div class="media-body">
+                                        <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
+                                        <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
+                                        <button class="btn btn-sm btn-light">Reply</button>
+                                    </div> -->
                         </div>
 
                     </div>
@@ -238,9 +240,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <!-- Author Bio -->
                     <div class="d-flex flex-column text-center bg-primary rounded mb-5 py-5 px-4">
                         <!-- <img src="img/user.jpg" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;"> -->
-                        <h3 class="text-secondary mb-3">John Doe</h3>
-                        <p class="text-white m-0">Conset elitr erat vero dolor ipsum et diam, eos dolor lorem ipsum, ipsum
-                            ipsum sit no ut est. Guber ea ipsum erat kasd amet est elitr ea sit.</p>
+                        <h3 class="text-secondary mb-3">سعيد ندا</h3>
+                        <p class="text-white m-0">مدير و منشاء المركز التخصصي للتخاطب باطفيح ودكتور تخاطب و تنميه</p>
                     </div>
 
                     <!-- Search Form -->
@@ -326,7 +327,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                     <!-- Tag Cloud -->
                     <div class="mb-5">
-                        <h2 class="mb-4">Tag Cloud</h2>
+                        <h2 class="mb-4">ابرز المواضيع</h2>
                         <div class="d-flex flex-wrap m-n1">
                             <a href="" class="btn btn-outline-primary m-1">التعزيز المتقطع / الجزئي</a>
                             <a href="" class="btn btn-outline-primary m-1">غرفة لقياس السمع</a>
@@ -344,10 +345,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                     <!-- Plain Text -->
                     <div>
-                        <h2 class="mb-4">Plain Text</h2>
-                        Aliquyam sed lorem stet diam dolor sed ut sit. Ut sanctus erat ea est aliquyam dolor et. Et no
-                        consetetur eos labore ea erat voluptua et. Et aliquyam dolore sed erat. Magna sanctus sed eos tempor
-                        rebum dolor, tempor takimata clita sit et elitr ut eirmod.
+                        <h2 class="mb-4">نصائح ارشاديه</h2>
+                        لاتخاذ القرار فيما إذا كنت مرشحا لزراعة قوقعة، يمكنك مقابلة أخصائي زراعة
+القوقعة لدى جونز هوبكب الذين سيتولون تقييم بنية الأذن وإجراء التقييمات
+الطبية والسمعية بالكامل
                     </div>
                 </div>
             </div>

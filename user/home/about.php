@@ -197,80 +197,82 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
 
     <!-- Team Start -->
+   
     <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">اساتذه المركز</span></p>
-                <h1 class="mb-4">قابل و تعرف عليهم</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Julia Smith</h4>
-                    <i>Music Teacher</i>
+            <div class="container">
+                <div class="text-center pb-2">
+                    <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
+                    <h1 class="mb-4">Meet Our Teachers</h1>
                 </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 text-center team mb-5">
+                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                            <img class="img-fluid w-100" src="img/photos/photo21.jpeg" alt="">
+                            <div
+                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
+                        <h4>وليد علي</h4>
+                        <i>تربيه خاصه</i>
                     </div>
-                    <h4>Jhon Doe</h4>
-                    <i>Language Teacher</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-md-6 col-lg-3 text-center team mb-5">
+                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                            <img class="img-fluid w-100" src="img/photos/photo24" alt="">
+                            <div
+                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
+                        <h4>سعيد ندا</h4>
+                        <i>مدير المركز</i>
                     </div>
-                    <h4>Mollie Ross</h4>
-                    <i>Dance Teacher</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-md-6 col-lg-3 text-center team mb-5">
+                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                            <img class="img-fluid w-100" src="img/photos/photo31" alt="">
+                            <div
+                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
+                        <h4>وفاء خميس</h4>
+                        <i>مدرب تخاطب</i>
                     </div>
-                    <h4>Donald John</h4>
-                    <i>Art Teacher</i>
+                    <div class="col-md-6 col-lg-3 text-center team mb-5">
+                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                            <img class="img-fluid w-100" src="img/photos/photo33" alt="">
+                            <div
+                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                    href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <h4>رضا توفيق</h4>
+                        <i>اخصائي تدريب</i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+                    
     <!-- Team End -->
 
 
