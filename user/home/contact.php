@@ -1,10 +1,5 @@
 <?php
 
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
-
-
     $servername = "localhost";
     $username = "root";
     $password = "password";
@@ -318,15 +313,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     </body>
 
     </html>
-
-<?php
-
-} else {
-
-    header("Location: ../registration_and_login/login.php");
-
-    exit();
-
-}
-
-?>

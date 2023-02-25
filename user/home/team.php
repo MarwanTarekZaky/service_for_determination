@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
-
- ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -391,15 +383,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 </body>
 
 </html>
-
-<?php 
-
-}else{
-
-     header("Location: ../registration_and_login/login.php");
-
-     exit();
-
-}
-
- ?>

@@ -1,12 +1,4 @@
-<?php
-
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
-
-    ?>
-
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -84,9 +76,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="row align-items-center px-3">
                 <div class="col-lg-6 text-center text-lg-left">
                     <h4 class="text-white mb-4 mt-5 mt-lg-0">مركز تعليم للاطفال</h4>
-                    <h1 class="display-3 font-weight-bold text-white">اهلا,
-                        <?php echo $_SESSION['name']; ?>
-                    </h1>
+                    <h1 class="display-3 font-weight-bold text-white">!اهلا بك في مركزنا </h1>
                     <p class="text-white mb-4"></p>
                     
                 </div>
@@ -239,7 +229,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                 <div class="col-6 py-1">$290 / شهريا</div>
                             </div>
                         </div>
-                        <a href="#BOOKNOW" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
@@ -267,7 +257,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                 <div class="col-6 py-1">$200 / شهريا</div>
                             </div>
                         </div>
-                        <a href="#BOOKNOW" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
@@ -297,7 +287,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                 <div class="col-6 py-1">$350 / شهريا</div>
                             </div>
                         </div>
-                        <a href="#BOOKNOW" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
                     </div>
                 </div>
             </div>
@@ -602,15 +592,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     </body>
 
     </html>
-
-<?php
-
-} else {
-
-    header("Location: ../registration_and_login/login.php");
-
-    exit();
-
-}
-
-?>

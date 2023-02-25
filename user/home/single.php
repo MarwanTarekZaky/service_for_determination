@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 
 $servername = "localhost";
 $username = "root";
@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     echo "Connected successfully";
 }
 
-if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
+
 
 
     $sql = "SELECT * FROM events ORDER BY id DESC LIMIT 1";
@@ -452,15 +452,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     </body>
 
     </html>
-
-    <?php
-
-} else {
-
-    header("Location: ../registration_and_login/login.php");
-
-    exit();
-
-}
-
-?>

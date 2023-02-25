@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
-
- ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -216,10 +208,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form>
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control border-0 p-4" placeholder="<?php echo $_SESSION['name']; ?>" required="required" />
-                                </div>
-    
-                                <div class="form-group">
                                     <select class="custom-select border-0 px-4" style="height: 47px;">
                                         <option selected>اختار نوع البرنامج</option>
                                         <option value="1">الفصيله الاولي</option>
@@ -228,7 +216,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                     </select>
                                 </div>
                                 <div>
-                                    <button class="btn btn-secondary btn-block border-0 py-3" type="book_seat">احجز مقعدا</button>
+                                    <a href="../registration_and_login/signup.php" class="btn btn-secondary btn-block border-0 py-3" >احجز مقعدا</a>
                                 </div>
                             </form>
                         </div>
@@ -332,15 +320,3 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 </body>
 
 </html>
-
-<?php 
-
-}else{
-
-     header("Location: ../registration_and_login/login.php");
-
-     exit();
-
-}
-
- ?>
