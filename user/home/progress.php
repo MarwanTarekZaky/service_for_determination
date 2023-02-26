@@ -4,6 +4,22 @@ session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "password";
+    $database = 'project';
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } else {
+        //echo "Connected successfully";
+    }
+
  ?>
 
 <!DOCTYPE html>
@@ -82,11 +98,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">header name</h3>
+            <h3 class="display-3 font-weight-bold text-white">تقييمات الاداء</h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <p class="m-0"><a class="text-white" href="index.php">الصفحه الرئيسيه</a></p>
                 <p class="m-0 px-2">/</p>
-                <p class="m-0">page name</p>
+                <p class="m-0"></p>
             </div>
         </div>
     </div>
@@ -98,11 +114,63 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
    
     <!-- main Start -->
     <div class="container-fluid pt-5">
-        <div class="container">
-           
-            
+            <div class="container">
+                <div class="bg-light p-5">
+                    <h2 class="mb-4">اعرض التقييمات</h2>
+                    <form method="post">
+                        <div class="form-group mb-0">
+                            <input type="search" name="search_name" id="search_name" placeholder="اسم المريض">
+                            <input name="list_grade" type="submit" value="اعرض جميع التقييمات" class="btn btn-primary px-3">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+
+
+
+        <div class="container-fluid pt-5">
+            <div class="container">
+                <div class="bg-light p-5">
+                    <?php if (isset($_POST['list_grade'])) {
+
+                        $search_name = $_POST['search_name'];
+
+                        $sql = "SELECT  user_name, lesson_name, grade FROM grades WHERE  user_name = '$search_name' ";
+
+
+                        if ($res = mysqli_query($conn, $sql)) {
+                            if (mysqli_num_rows($res) > 0) {
+                                echo "<table>";
+                                echo "<tr>";
+                                echo "<th>اسم المريض</th>";
+                                echo "<th>عنوان الدرس</th>";
+                                echo "<th>التقييم</th>";
+                                echo "</tr>";
+                                while ($row = mysqli_fetch_array($res)) {
+                                    echo "<tr>";
+                                    echo "<td>" . $row['user_name'] . "</td>";
+                                    echo "<td>" . $row['lesson_name'] . "</td>";
+                                    echo "<td>" . $row['grade'] . "</td>";
+                                    echo "</tr>";
+                                }
+                                echo "</table>";
+                                mysqli_free_result($res);
+                            } else {
+                                echo "لا يوجد تقييمات لهذا الاسم";
+                            }
+                        } else {
+                            echo "ERROR: Could not able to execute $sql. "
+                                . mysqli_error($link);
+                        }
+                        $conn->close();
+                    }
+                    ?>
+
+                </div>
+            </div>
+        </div>
+
     <!-- main End -->
 
 
