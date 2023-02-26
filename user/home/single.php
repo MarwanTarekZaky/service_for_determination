@@ -14,7 +14,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-    echo "Connected successfully";
+    //echo "Connected successfully";
 }
 
 
@@ -27,9 +27,9 @@ if ($conn->connect_error) {
     if ($result->num_rows > 0) {
 
         $row = $result->fetch_assoc();
-        echo "Record fetched successfully";
-        echo $row['author_name'];
-        echo $row['para1'];
+        //echo "Record fetched successfully";
+        //echo $row['author_name'];
+       // echo $row['para1'];
 
     }
 
