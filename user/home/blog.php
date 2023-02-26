@@ -121,7 +121,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container">
                 <div class="text-center pb-2">
                     <p class="section-title px-5"><span class="px-2">ملتقطات</span></p>
-                    <h1 class="mb-4">صور ابنائنا بالمركز</h1>
+                    <h1 class="mb-4">مقاطع تعليميه </h1>
                 </div>
                 <div class="row portfolio-container">
                     <?php
