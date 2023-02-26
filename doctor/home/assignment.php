@@ -270,11 +270,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="bg-light p-5">
 
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message ?></h1>
-                    <h2 class="mb-4">احذف المقاطع المحمله</h2>
+                    <h2 class="mb-4">احذف التسليمات السابقه</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="اسم الطبيب او المريض">
-                            <input name="remove" type="submit" value="احذف جميع المقاطع"
+                            <input type="search" name="search_name" id="search_name" placeholder="اسم المريض">
+                            <input name="remove_all_assignment" type="submit" value="احذف جميع التسليمات"
                                 class="btn btn-primary px-3">
                         </div>
                     </form>
@@ -285,22 +285,27 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
-                    <?php if (isset($_POST['remove_notes'])) {
+                    <?php if (isset($_POST['remove_all_assignment'])) {
 
                             $search_name = $_POST['search_name'];
 
-                        $sql = "DELETE FROM notes WHERE (doctor_name = '$search_name')OR (user_name = '$search_name')";
+                            $sql = "DELETE FROM assignment_audios WHERE user_name = '$search_name'";
+                            $conn->query($sql);
 
-                        if ($conn->query($sql) === TRUE) {
-                            echo "<h1>All note deleted successfully</h1>";
-                
-                             $success_message = "New note sent successfully";
-                
-                        } else {
-                            echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
+                            $sql = "DELETE FROM assignment_images WHERE user_name = '$search_name'";
+                            $conn->query($sql);
 
-                        $conn->close();
+                            $sql = "DELETE FROM assignment_videos WHERE user_name = '$search_name'";
+                            $conn->query($sql);
+                            
+    
+                            $success_message = "Previous assignments Deleted successfully";
+                
+                        
+                            //echo "Error: " . $sql . "<br>" . $conn->error;
+                        
+
+                        //$conn->close();
 
                     }
 
