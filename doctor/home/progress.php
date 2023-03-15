@@ -32,7 +32,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             VALUES ( '$user_name', '$lesson_name', $grade)";
 
         if ($conn->query($sql) === TRUE) {
-            echo "<h1>New grade set successfully</h1>";
+            //echo "<h1>New grade set successfully</h1>";
 
              $success_message = "New grade set successfully";
 
