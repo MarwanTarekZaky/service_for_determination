@@ -31,8 +31,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         $lesson_name = $_POST['lesson_name'];
         $disease_type = $_POST['disease_type'];
         $text_content = $_POST['text_content'];
-        $video = $_POST['video'];
-        $image = $_POST['image'];
+        //$video = $_POST['video'];
+        //$image = $_POST['image'];
+        $assignment = $_POST['assignment'];
         //$audio_file = $_POST['audio_file'];
 
 
@@ -80,7 +81,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     }
 
 
-        $insert = $conn->query("INSERT into lesson (doctor_name,lesson_name, disease_type, text_content, video, image, audio) VALUES ('" . $doctor_name . "','" . $lesson_name . "', $disease_type, '" . $text_content . "', '" . $target_file . "', '" . $fileName . "', '" . $audio_name . "' )");
+        $insert = $conn->query("INSERT into lesson (doctor_name,lesson_name, disease_type, text_content, video, image, audio, assignment) VALUES ('" . $doctor_name . "','" . $lesson_name . "', $disease_type, '" . $text_content . "', '" . $target_file . "', '" . $fileName . "', '" . $audio_name . "', '" . $assignment . "')");
         if ($insert) {
         } else {
         }
@@ -231,6 +232,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             </h1>
                             <label for="audio_file">اضف مقطع صوتي</label>
                             <input name="audio_file" type="file" class="form-control" id="audio_file">
+                        </div>
+                        <div class="form-group">
+                            <label for="assignment">المحتوي النصي للدرس</label>
+                            <textarea name="assignment" id="assignment" cols="30" rows="5" class="form-control"
+                                placeholder=" الواجب المنزلي المطلوب هو ...." required></textarea>
                         </div>
                         <div class="form-group mb-0">
                             <input name="set_lesson" type="submit" value="اضف درس" class="btn btn-primary px-3">

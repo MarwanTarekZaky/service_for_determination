@@ -12,24 +12,24 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     } else {
-        // echo "Connected successfully";
+        echo "Connected successfully";
     }
     $success_message = '';
 
-    if (isset($_POST['setـmessage'])) {
+    if (isset($_POST['set'])) {
 
 
         $name=$_POST['name'];
         $email=$_POST['email'];
         $subject=$_POST['subject'];
         $message=$_POST['message'];
-
+       
         $sql = "INSERT INTO user_message (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
-
+     
 
         if ($conn->query($sql) === TRUE) {
-            //   echo "<h1>New note sent successfully</h1>";
-            $success_message = "New message sent successfully";
+              echo "<h1>New note sent successfully</h1>";
+            // $success_message = "New message sent successfully";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -132,7 +132,8 @@
 
 
         <!-- Contact Start -->
-        <div class="container-fluid pt-5">
+      
+            <div class="container-fluid pt-5">
             <div class="container">
                 <div class="text-center pb-2">
                     <p class="section-title px-5"><span class="px-2"></span></p>
@@ -142,35 +143,14 @@
                     <div class="col-lg-7 mb-5">
                         <div class="contact-form">
                             <div id="success"></div>
-                            <form id="contactForm" novalidate="novalidate" method="post">
-                                <div class="control-group">
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="ادخل اسمك"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group">
-                                    <input name="email" type="email" class="form-control" id="email"
-                                        placeholder="ادخل البريد الالكتروني" required="required"
-                                        data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group">
-                                    <input name="subject" type="text" class="form-control" id="subject"
-                                        placeholder="عنوان الموضوع" required="required"
-                                        data-validation-required-message="Please enter a subject" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group">
-                                    <textarea name="message" class="form-control" rows="6" id="message"
-                                        placeholder="الرساله" required="required"
-                                        data-validation-required-message="Please enter your message"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div>
-                                    <button name="setـmessage" class="btn btn-primary py-2 px-4" type="submit"
-                                        id="sendMessageButton">ارسال رساله</button>
-                                </div>
-                            </form>
+                          
+                            <div class="text-center pb-2">
+                    <p class="section-title px-5"><span class="px-2"></span></p>
+                    <h1 class="mb-4">نرحب بكم دائما في مواقعنا</h1>
+                </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.7070948785736!2d31.254946884841335!3d29.408123455304885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14599528c7a6e261%3A0x6fb22dfca5a82c0f!2z2KfZhNmF2LHZg9iyINin2YTYqtiu2LXYtdmJINmE2YTYqtiu2KfYt9ioINio2KfYt9mB2YrYrQ!5e0!3m2!1sar!2seg!4v1680881280946!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
                         </div>
                     </div>
                     <div class="col-lg-5 mb-5">
