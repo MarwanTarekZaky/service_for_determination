@@ -14,7 +14,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-    echo "Connected successfully";
+    //echo "Connected successfully";
 }
 
 if (isset($_POST['delete'])) {
@@ -24,12 +24,27 @@ if (isset($_POST['delete'])) {
     $sql = "DELETE FROM doctor_info WHERE name='$name'";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<h1>Record deleted successfully</h1>";
       } else {
         echo "Error deleting record: " . mysqli_error($conn);
       }
       
 
+      $sql2 = "SELECT * FROM doctor_info WHERE name='$name'";
+
+      $result = mysqli_query($conn, $sql2);
+  
+      if (mysqli_num_rows($result) === 1) {
+  
+          $row = mysqli_fetch_assoc($result);
+  
+          if ($row['name'] === $name) {
+            echo "<h1>Record deleted successfully</h1>";
+          } else {
+              echo "<h1> doctor does not  </h1>";
+              // header("Location: index.php?error=Incorect User name or password");
+          }
+
+        }
      }   
 
         

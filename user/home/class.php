@@ -113,6 +113,10 @@
                                 <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
                                 <div class="col-6 py-1">08:00 - 10:00</div>
                             </div>
+                            <div class="row border-bottom">
+                                <div class="col-6 py-1 text-right border-right"><strong> نوع الفصيله</strong></div>
+                                <div class="col-6 py-1">الفصيله 1</div>
+                            </div>
                             <div class="row">
                                 <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
                                 <div class="col-6 py-1">$290 / شهريا</div>
@@ -140,6 +144,10 @@
                             <div class="row border-bottom">
                                 <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
                                 <div class="col-6 py-1">012:00 - 1:00</div>
+                            </div>
+                            <div class="row border-bottom">
+                                <div class="col-6 py-1 text-right border-right"><strong> نوع الفصيله</strong></div>
+                                <div class="col-6 py-1">الفصيله 2</div>
                             </div>
                             <div class="row">
                                 <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
@@ -170,6 +178,10 @@
                             <div class="row border-bottom">
                                 <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
                                 <div class="col-6 py-1">04:00 - 10:00</div>
+                            </div>
+                            <div class="row border-bottom">
+                                <div class="col-6 py-1 text-right border-right"><strong> نوع الفصيله</strong></div>
+                                <div class="col-6 py-1">الفصيله 3</div>
                             </div>
                             <div class="row">
                                 <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>

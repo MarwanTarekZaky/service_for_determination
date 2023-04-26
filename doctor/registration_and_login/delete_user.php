@@ -14,7 +14,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-    echo "Connected successfully";
+  //  echo "Connected successfully";
 }
 
 if (isset($_POST['delete'])) {
@@ -73,7 +73,7 @@ $conn->close();
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title"> حذف طبيب</h2>
+                        <h2 class="form-title"> حذف مريض</h2>
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -83,7 +83,7 @@ $conn->close();
                             
                             <div class="form-group form-button">
                                 <input type="submit" name="delete" id="signin" class="form-submit"
-                                    value="حذف طبيب" />
+                                    value="حذف " />
                             </div>
                         </form>
                     </div>

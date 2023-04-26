@@ -12,7 +12,8 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }else{
-echo "Connected successfully";}
+//echo "Connected successfully";
+}
 
     if(isset($_POST['signup'])){
 
@@ -64,7 +65,7 @@ echo "Connected successfully";}
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">انشاء مستخدم جديد</h2>
+                        <h2 class="form-title">انشاء حساب طبيب </h2>
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
