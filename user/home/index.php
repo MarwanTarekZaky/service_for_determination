@@ -48,7 +48,7 @@
                         <a href="team.php" class="nav-item nav-link">اطباء المركز</a>
                         <a href="gallery.php" class="nav-item nav-link">صور المركز</a>
                         <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                        <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
+                        <a href="../../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
                         <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>

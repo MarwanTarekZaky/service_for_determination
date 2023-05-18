@@ -52,16 +52,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
                     <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                    <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
-                    <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a>
-                    <a href="../registration_and_login/delete_doctor.php" class="nav-item nav-link">حذف طبيب</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-
-                        </div>
-                    </div>
-                    
+                    <a href="../../registration_and_login/signup_doctor.php" class="nav-item nav-link">انشاء حساب</a>
+                    <a href="../../registration_and_login/delete_doctor.php" class="nav-item nav-link">حذف طبيب</a>
                 </div>
                 
             </div>
