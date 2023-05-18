@@ -132,32 +132,22 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
                 <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
                     <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-primary">التخصصي للتخاطب</span>
+                    <span class="text-primary">Speech specialist</span>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
-                        <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
-                        <a href="../registration_and_login/delete_user.php" class="nav-item nav-link">حذف مستخدم</a>
-
-                        <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                        <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
-                        <!-- <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a> -->
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="blog.php" class="dropdown-item">اعاده التاهيل</a>
-                                <a href="single.php" class="dropdown-item">اخبار المركز</a>
-                                <a href="examples.php" class="dropdown-item">اسئله</a>
-                                <a href="comments.php" class="dropdown-item">ملاحظات</a>
-                                <a href="assignment.php" class="dropdown-item">التسليمات</a>
-                                <a href="progress.php" class="dropdown-item">الاداء</a>
-                                <a href="learning.php" class="dropdown-item">التعلم</a>
-                            </div>
-                        </div>
-
+                    <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>        
+                    <a href="logout.php" class="nav-item nav-link">LogOut</a>
+                    <a href="single.php" class="nav-item nav-link">Rehabilitation</a>
+                    <a href="blog.php" class="nav-item nav-link">Events</a>
+                    <a href="examples.php" class="nav-item nav-link">Examples</a>
+                    <a href="comments.php" class="nav-item nav-link">Comments</a>
+                    <a href="assignment.php" class="nav-item nav-link">Assignments</a>
+                    <a href="progress.php" class="nav-item nav-link">progress</a>
+                    <a href="index.php" class="nav-item nav-link">Home</a>
                     </div>
 
                 </div>
@@ -279,7 +269,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
 } else {
 
-    header("Location: ../registration_and_login/login.php");
+    header("Location: ../../registration_and_login/login.php");
 
     exit();
 

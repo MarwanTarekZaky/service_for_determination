@@ -27,7 +27,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
     <head>
         <meta charset="utf-8">
-        <title>التخصصي للتخاطب</title>
+        <title>Assignments</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free HTML Templates" name="keywords">
         <meta content="Free HTML Templates" name="description">
@@ -59,34 +59,23 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
                 <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
                     <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-primary">التخصصي للتخاطب</span>
+                    <span class="text-primary">Speech specialist</span>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
-                        <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
-                        <a href="../registration_and_login/delete_user.php" class="nav-item nav-link">حذف مستخدم</a>
-
-                        <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                        <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
-                        <!--<a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a>-->
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="blog.php" class="dropdown-item">اعاده التاهيل</a>
-                                <a href="single.php" class="dropdown-item">اخبار المركز</a>
-                                <a href="examples.php" class="dropdown-item">اسئله</a>
-                                <a href="comments.php" class="dropdown-item">ملاحظات</a>
-                                <a href="assignment.php" class="dropdown-item">التسليمات</a>
-                                <a href="progress.php" class="dropdown-item">الاداء</a>
-                                <a href="learning.php" class="dropdown-item">التعلم</a>
-                            </div>
-                        </div>
-
+                        <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>
+                        <a href="logout.php" class="nav-item nav-link">LogOut</a>
+                        <a href="single.php" class="nav-item nav-link">Rehabilitation</a>
+                        <a href="blog.php" class="nav-item nav-link">Events</a>
+                        <a href="examples.php" class="nav-item nav-link">Examples</a>
+                        <a href="comments.php" class="nav-item nav-link">Comments</a>
+                        <a href="progress.php" class="nav-item nav-link">progress</a>
+                        <a href="learning.php" class="nav-item nav-link">Learning</a>
+                        <a href="index.php" class="nav-item nav-link">Home</a>
                     </div>
-
                 </div>
             </nav>
         </div>
@@ -264,12 +253,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
         <!-- Start Deleting videos -->
 
-             
-             <div class="container-fluid pt-5">
+
+        <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
 
-                <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message ?></h1>
+                    <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;">
+                        <?php echo $success_message ?>
+                    </h1>
                     <h2 class="mb-4">احذف التسليمات السابقه</h2>
                     <form method="post">
                         <div class="form-group mb-0">
@@ -281,32 +272,32 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 </div>
             </div>
         </div>
-        
+
         <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
                     <?php if (isset($_POST['remove_all_assignment'])) {
 
-                            $search_name = $_POST['search_name'];
+                        $search_name = $_POST['search_name'];
 
-                            $sql = "DELETE FROM assignment_audios WHERE user_name = '$search_name'";
-                            $conn->query($sql);
+                        $sql = "DELETE FROM assignment_audios WHERE user_name = '$search_name'";
+                        $conn->query($sql);
 
-                            $sql = "DELETE FROM assignment_images WHERE user_name = '$search_name'";
-                            $conn->query($sql);
+                        $sql = "DELETE FROM assignment_images WHERE user_name = '$search_name'";
+                        $conn->query($sql);
 
-                            $sql = "DELETE FROM assignment_videos WHERE user_name = '$search_name'";
-                            $conn->query($sql);
-                            
-    
-                            $success_message = "Previous assignments Deleted successfully";
+                        $sql = "DELETE FROM assignment_videos WHERE user_name = '$search_name'";
+                        $conn->query($sql);
+
+
+                        $success_message = "Previous assignments Deleted successfully";
+
+
+                        //echo "Error: " . $sql . "<br>" . $conn->error;
                 
-                        
-                            //echo "Error: " . $sql . "<br>" . $conn->error;
-                        
 
                         //$conn->close();
-
+                
                     }
 
                     ?>
@@ -357,11 +348,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     </body>
 
     </html>
-<?php
+    <?php
 
 } else {
 
-    header("Location: ../registration_and_login/login.php");
+    header("Location: ../../registration_and_login/login.php");
 
     exit();
 
