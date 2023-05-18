@@ -43,13 +43,12 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
-                    <a href="about.php" class="nav-item nav-link active">نبذه عن المركز</a>
+                  
                     <a href="class.php" class="nav-item nav-link">البرامج الدراسيه</a>
                     <a href="team.php" class="nav-item nav-link">اطباء المركز</a>
                     <a href="gallery.php" class="nav-item nav-link">صور المركز</a>
                     <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                    <a href="../registration_and_login/login.php" class="nav-item nav-link">تسجيل الدخول</a>
-                    <a href="../registration_and_login/signup.php" class="nav-item nav-link">انشاء حساب</a>
+                
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
                         <div class="dropdown-menu rounded-0 m-0">
