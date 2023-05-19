@@ -35,35 +35,33 @@
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
             <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
                 <i class="flaticon-043-teddy-bear"></i>
-                <span class="text-primary">التخصصي للتخاطب</span>
+                <span class="text-primary">Speech specialist</span>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.php" class="nav-item nav-link">الصفحه الرئيسيه</a>
-                  
-                    <a href="class.php" class="nav-item nav-link">البرامج الدراسيه</a>
-                    <a href="team.php" class="nav-item nav-link">اطباء المركز</a>
-                    <a href="gallery.php" class="nav-item nav-link">صور المركز</a>
-                    <a href="logout.php" class="nav-item nav-link">تسجيل الخروج</a>
-                
+                    <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
+                    <a href="single.php" class="nav-item nav-link">Events</a>
+                    <a href="comments.php" class="nav-item nav-link">Commnets</a>
+                    <a href="assignment.php" class="nav-item nav-link">Assignment</a>
+                    <a href="progress.php" class="nav-item nav-link">Progress</a>
+                    <a href="learning.php" class="nav-item nav-link">Learning</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحات الموقع</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Other</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.php" class="dropdown-item">اعاده التاهيل</a>
-                            <a href="single.php" class="dropdown-item">اخبار المركز</a>
-                            <a href="examples.php" class="dropdown-item">اسئله</a>
-                            <a href="comments.php" class="dropdown-item">ملاحظات</a>
-                            <a href="assignment.php" class="dropdown-item">التسليمات</a>
-                            <a href="progress.php" class="dropdown-item">الاداء</a>
-                            <a href="learning.php" class="dropdown-item">التعلم</a>
+                            <a href="class.php" class="dropdown-item">Classes</a>
+                            <a href="team.php" class="dropdown-item">Our Team</a>
+                            <a href="gallery.php" class="dropdown-item">Gallery</a>
+                            <a href="logout.php" class="dropdown-item">Log Out</a>
+                            <a href="examples.php" class="dropdown-item">Examples</a>
+                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
                         </div>
                     </div>
-                    <a href="contact.php" class="nav-item nav-link">تواصل معنا</a>
+                    <a href="contact.php" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="btn btn-primary px-4">التبرع للمركز</a>
+                <a href="index.php" class="btn btn-primary px-4">Home</a>
             </div>
         </nav>
     </div>
@@ -71,13 +69,15 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">نبذه مختصره</h3>
-            <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
-                <p class="m-0 px-2">/</p>
-                <p class="m-0">نبذه عن المركز</p>
+    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
+        <div class="row align-items-center px-3">
+            <div class="col-lg-6 text-center text-lg-left">
+                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
+                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
+                <p class="text-white mb-4"></p>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <img class="img-fluid mt-5" src="img/header.png" alt="">
             </div>
         </div>
     </div>
@@ -268,73 +268,72 @@
 
 
     <!-- Footer Start -->
-   
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                    style="font-size: 40px; line-height: 40px;">
                     <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-white">للتواصل</span>
+                    <span class="text-white">For contact</span>
                 </a>
-                <p>اداره المركز تسعد للتواصل مع حضراتكم و متابع كافه انشطه الطلبه عبر شبكه التواصل الاجتماعي خاصتنا</p>
+                <p>The center's house is happy to communicate with you and follow all the students' activities through our social network</p>
                 <div class="d-flex justify-content-start mt-4">
-                   
+
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="https://www.facebook.com/Center.altahsse"><i class="fab fa-facebook-f"></i></a>
-                  
+                        style="width: 38px; height: 38px;" href="https://www.facebook.com/Center.altahsse"><i
+                            class="fab fa-facebook-f"></i></a>
+
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">ابقي علي تواصل</h3>
+                <h3 class="text-primary mb-4">Keep in touch</h3>
                 <div class="d-flex">
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
-                        <h5 class="text-white">العنوان</h5>
-                        <p>اطفيح , الجيزه , مصر</p>
+                        <h5 class="text-white">Adress</h5>
+                        <p>Atfeh , Giza , Egypt</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-envelope text-primary"></h4>
                     <div class="pl-3">
-                        <h5 class="text-white">البريد الالكتروني</h5>
+                        <h5 class="text-white">Email</h5>
                         <p>serviceDetermination@example.com</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-phone-alt text-primary"></h4>
                     <div class="pl-3">
-                        <h5 class="text-white">رقم الهاتف</h5>
+                        <h5 class="text-white">Phone number</h5>
                         <p>+2001119584725</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">وصول سريع</h3>
+                <h3 class="text-primary mb-4">Quick access</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>الصفحه الرئيسيه</a>
-                    <a class="text-white mb-2" href="about.php"><i class="fa fa-angle-right mr-2"></i>نبذه عنا</a>
-                    <a class="text-white mb-2" href="class.php"><i class="fa fa-angle-right mr-2"></i>البرامج العلاجيه</a>
-                    <a class="text-white mb-2" href="team.php"><i class="fa fa-angle-right mr-2"></i>اساتذنا</a>
-                    <a class="text-white mb-2" href="donation.php"><i class="fa fa-angle-right mr-2"></i>التبرع</a>
-                    <a class="text-white" href="contact.php"><i class="fa fa-angle-right mr-2"></i>تواصل معنا</a>
+                    <a class="text-white mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>Home page</a>
+                    <a class="text-white mb-2" href="about.php"><i class="fa fa-angle-right mr-2"></i>About US</a>
+                    <a class="text-white mb-2" href="class.php"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                    <a class="text-white mb-2" href="team.php"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
+                    <a class="text-white mb-2" href="donation.php"><i class="fa fa-angle-right mr-2"></i>Donation</a>
+                    <a class="text-white" href="contact.php"><i class="fa fa-angle-right mr-2"></i>Contact US</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h3 class="text-primary mb-4">
 
                 </h3>
-                
+
             </div>
         </div>
         <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="https://www.facebook.com/Center.altahsse">التخصصي للتخاطب</a>
-                كل الحقوق محفوظه لدي كليه الحاسبات و الذكاء الاصطناعي جامعه حلوان
-                <a class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">كليه الحاسبات</a>
+                &copy; <a class="text-primary font-weight-bold" href="https://www.facebook.com/Center.altahsse">Speech specialist </a>
+                All rights reserved to the Faculty of Computing and Artificial Intelligence,<a class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">Helwan University</a>
             </p>
         </div>
     </div>
-
     <!-- Footer End -->
 
 
