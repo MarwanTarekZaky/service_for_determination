@@ -14,7 +14,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-   // echo "Connected successfully";
+    // echo "Connected successfully";
 }
 
 if (isset($_POST['signin'])) {
@@ -22,10 +22,20 @@ if (isset($_POST['signin'])) {
     $name = $_POST['name'];
     $pass = $_POST['pass'];
 
+    $check = 0;
 
     $sql = "SELECT * FROM user_info WHERE name='$name' AND pass='$pass' ";
 
     $result = mysqli_query($conn, $sql);
+
+    $sql2 = "SELECT * FROM doctor_info WHERE name='$name' AND pass='$pass' ";
+
+    $result2 = mysqli_query($conn, $sql2);
+
+    $sql3 = "SELECT * FROM admin_info WHERE name='$name' AND pass='$pass' ";
+
+    $result3 = mysqli_query($conn, $sql3);
+
 
     if (mysqli_num_rows($result) === 1) {
 
@@ -39,26 +49,61 @@ if (isset($_POST['signin'])) {
 
             $_SESSION['id'] = $row['id'];
 
-            header("Location: ../home/index.php");
-
-            exit();
-
-        } else {
-
-            echo "<h1>Incorect User name or password</h1>";
-            // header("Location: index.php?error=Incorect User name or password");
+            $check = 1;
+            header("Location: ../user/home/index.php");
 
             exit();
 
         }
-    } else {
+    }
+
+    if (mysqli_num_rows($result2) === 1) {
+
+        $row = mysqli_fetch_assoc($result2);
+
+        if ($row['name'] === $name && $row['pass'] === $pass) {
+
+            echo "<h1>Logged in!</h1>";
+
+            $_SESSION['name'] = $row['name'];
+
+            $_SESSION['id'] = $row['id'];
+
+            $check = 1;
+            header("Location: ../doctor/home/index.php");
+
+            exit();
+
+        }
+    }
+    if (mysqli_num_rows($result3) === 1) {
+
+        $row = mysqli_fetch_assoc($result3);
+
+        if ($row['name'] === $name && $row['pass'] === $pass) {
+
+            echo "<h1>Logged in!</h1>";
+
+            $_SESSION['name'] = $row['name'];
+
+            $_SESSION['id'] = $row['id'];
+
+            $check = 1;
+            header("Location: ../admin/home/index.php");
+
+            exit();
+
+        }
+    }
+     if($check==0){
 
         echo "<h1>Incorect User name or password</h1>";
-        //header("Location: index.php?error=Incorect User name or password");
+         //header("Location: login.php?error=Incorect User name or password");
 
-        exit();
+        //exit();
 
     }
+
 
 
 
@@ -94,29 +139,23 @@ $conn->close();
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
-                        <h1 style=""><a href="signup.php" class="signup-image-link" style="text-decoration: none; color: aqua; font-size: xx-large;">انشاء حساب</a></h1>
-                        <a href="../../doctor/registration_and_login/login.php" class="signup-image-link" style="text-decoration: none; color: darkred; font-size: large;"> التسجيل الدخول كطبيب</a>
+                        <h1 style=""><a href="signup.php" class="signup-image-link" style="text-decoration: none; color: aqua; font-size: xx-large;">Register</a></h1>
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">تسجيل الدخول</h2>
+                        <h2 class="form-title">Login</h2>
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="اسم المستخدم" required />
+                                <input type="text" name="name" id="name" placeholder="User name" required />
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="الرقم السري" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me"
-                                    class="label-agree-term"><span><span></span></span>تذكرني</label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" required />
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit"
-                                    value="تسجيل الدخول" />
+                                    value="Login" />
                             </div>
                         </form>
                     </div>
