@@ -18,17 +18,13 @@ if ($conn->connect_error) {
     if(isset($_POST['signup'])){
 
         $name = $_POST['name'];
-        $email = $_POST['email'];
         $pass = $_POST['pass'];
-        $number = $_POST['number'];
-        $disease_type = $_POST['disease_type'];
 
-
-        $sql = "INSERT INTO doctor_info (name, email, pass, number, disease_type)
-        VALUES ('$name', '$email', '$pass', $number, $disease_type)";
+        $sql = "INSERT INTO admin_info (name, pass)
+        VALUES ('$name', '$pass')";
         
         if ($conn->query($sql) === TRUE) {
-          echo "<h1>New Doctor created successfully</h1>";
+          echo "<h1>New Admin created successfully</h1>";
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -65,43 +61,15 @@ if ($conn->connect_error) {
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">انشاء حساب طبيب </h2>
+                        <h2 class="form-title">انشاء حساب مدير موقع </h2>
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="الاسم" required minlength="4" maxlength="25"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="الايميل" required/>
-                            </div>
+                            </div>   
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="pass" id="pass" placeholder="الرقم السري" required />
-                            </div>
-                        
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1"><strong>فئه المرض</strong></label>
-                                
-                                <div class="form-group">
-                                    <label for="number"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="number" id="number" placeholder="رقم الهاتف" required/>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <select name="disease_type" class="form-control form-control-lg" id="exampleFormControlSelect1">
-                                    <option value="">please select </option>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term"value="agree" class="agree-term" />
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>انا اوافق علي كافه الشروط
-                                     <a href="#" class="term-service">سياسات الخدمه</a></label>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="انشاء" />

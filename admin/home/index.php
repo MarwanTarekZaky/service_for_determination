@@ -52,6 +52,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.php" class="nav-item nav-link">Main page</a>
                     <a href="logout.php" class="nav-item nav-link">LogOut</a>
+                    <a href="../../registration_and_login/signup_admin.php" class="nav-item nav-link">Create Admin Account</a>
                     <a href="../../registration_and_login/signup_doctor.php" class="nav-item nav-link">Create Doctor Account</a>
                     <a href="../../registration_and_login/delete_doctor.php" class="nav-item nav-link">Delete Doctor Account</a>
                 </div>
