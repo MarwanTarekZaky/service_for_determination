@@ -110,12 +110,9 @@ if ($conn->connect_error) {
     <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
         <div class="row align-items-center px-3">
             <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
                 <p class="text-white mb-4"></p>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
             </div>
         </div>
     </div>
@@ -127,61 +124,36 @@ if ($conn->connect_error) {
             <div class="row pt-5">
                 <div class="col-lg-8">
                     <div class="d-flex flex-column text-left mb-3">
-                        <p class="section-title pr-5"><span class="pr-2">تفاصيل انشطه المركز</span></p>
-                        <h1 class="mb-3">اخبار و احداث حصريه للمركز</h1>
+                        <p class="section-title pr-5"><span class="pr-2">center's activities</span></p>
+                        <h1 class="mb-3">News and exclusive events of the center</h1>
                         <div class="d-flex">
-                            <p class="mr-3"><i class="fa fa-user text-primary"></i> الدكتور</p>
-                            <p class="mr-3"><i class="fa fa-folder text-primary"></i> ايفينت للمركز</p>
+                            <p class="mr-3"><i class="fa fa-user text-primary"></i>Doctor</p>
+                            <p class="mr-3"><i class="fa fa-folder text-primary"></i>Cenetr events</p>
                             <p class="mr-3"><i class="fa fa-comments text-primary"></i> 15</p>
                         </div>
                     </div>
                     <div class="mb-5">
-                        <img class="img-fluid rounded w-100 mb-4" src="img/detail.jpg" alt="Image">
-                        <p>يوض متخصصو السمعيات لدينا بزراعة القوقعة للطفل ىف سن مبكرة حيث ييٍ
-                            تكون النتائج أفضل نظ ًرا لأنها تساعد دماغ الطفل عل الوصول إلى الأصوات￼
-                            اللازمة لتعلم المهارات اللغوية .ويعتمد أصغر سن يمكن خضوع الطفل فيه￼￼
-                            لجراحة زراعة القوقعة عل حجم الطفل وصحته؛ حيث يصل غالبية الأطفال إلى￼
-                            الحجم المناسب لإجراء تلك الجراحة ىف عمر ي رباوح من 10 إلى 12 شه ًرا.</p>
-                        <p>تلعب عملية التأهيل والتدريب بعد الجراحة دوًرا حيوًيا ىف تحقيق أفضل نتائج ي
-                            ممكنة فيما يتعلق بالقدرة عل السمع. بالنسبة للمر ىض الوافدين من الخارج￼
-                            لإجراء الجراحة ىف مدينة بلتيمور، فنحن نوض بالمتابعة أو ًلا مع متخصصى￼ ييي
-                            ىىىى￼
-                            السمعيات وأخصائ رن التأهيل التابع ري لمستشف جونز هوبكب خلال الشهور
-                            الأولى بعد إجراء الجراحة .وبعد ذلك، سنعمل مع المر ىض لمساعدتهم ىف إيجاد￼ ي
-                            متخصصى سمعيات وأخصائرن تأهيل سمع ىف بلادهم لتولى رعايتهم عل المدى ييييي
-                            ي
-                            الطويل.</p>
-                        <h2 class="mb-4">متلازمه داون</h2>
+                        <img class="img-fluid rounded w-100 mb-4" src="img/photos/photo1.jpeg" alt="Image">
+                        <p>Our audiologists recommend cochlear implantation for a child at an early age, where the results are better because it helps the child’s brain access the sounds needed to learn language skills. The youngest age at which a child can undergo cochlear implant surgery depends on the size and health of the child; Most children reach the appropriate size for this surgery by the age of 10 to 12 months.
+
+The rehabilitation and training process after surgery plays a vital role in achieving the best possible hearing results. For patients arriving from abroad for surgery in Baltimore City, we will first follow up with the Johns Hopkins Audiologists and Rehabilitators during the first months after surgery. After that, we will work with patients to help them find ￼ Audiologists and hearing rehabilitation specialists in their country to take over their long-term care.</p>
+                        <p>The rehabilitation and training process after surgery plays a vital role in achieving the best possible hearing results. For patients arriving from abroad for surgery in Baltimore City, we will first follow up with the Johns Hopkins Audiologists and Rehabilitators during the first months after surgery. After that, we will work with patients to help them find ￼ Audiologists and hearing rehabilitation specialists in their country to take over their long-term care.</p>
+                        <h2 class="mb-4">Down's syndrome</h2>
                         <img class="img-fluid rounded w-50 float-left mr-4 mb-3" src="img/blog-1.jpg" alt="Image">
-                        <p> ىف علاج متلازمة داون ، تخلق أنشطة العلاج ال رن تق ربب من كونها شاملة ىف
-ييي 
-المواقف الجسدية والاجتماعية والنفسية خطة تقييم وعلاج واسعة النطاق
-تخطط أي ًضا لحياة الفرد المستقبلية. تخلق أنشطة العلاج بالأرجح ال رن ي
-تهدف إلى أقصى درجة من الاستقلال خطة علاجية يمكن أن تتكيف مع
-إمكانات العمل والتطبيق ال رن يمكن العثور عليها وتطويرها وتكييفها ىف علاج ىيي
-متلازمة داون ، بما ف ذلك الأفراد ، مع أفضل المهارات. يتم وضع خطة ىي
-علاج واسعة ف علاج متلازمة داون ، بالتواصل مع الأسرة ومقدم الرعاية يي
-الفردية.</p>
-                        <h3 class="mb-4">ال ربنامج التأهيل زراعة القوقعة</h3>
-                        <img class="img-fluid rounded w-50 float-right ml-4 mb-3" src="img/blog-2.jpg" alt="Image">
-                        <p>تتضمن عملية السمع أكبر من مجرد التعرف عل الأصوات فحسب — فما نستمع
-إليه يؤثر عل قدرتنا عل التعلم وكيفية إدراكنا للعالم من حولنا بالنسبة للبالغ
-قد يؤثر فقدان السمع الحاد عل تفاعلهم الاجتماع، وأدائهم الوظيفي، وصحتهم￼
-العامة.أمابالنسبة للصغار ،فقد يتسبب فقدانا لسمع الحاد ىفإعاقة مسار النموي
-الطبي علي لمهاراتهم اللغوية والاجتماعية تعد زراعة القوقعة وسيلة لعلاج المصاب
-بالصمم أو ضعف السمع .وهذه القوقعة عبارة عن جهاز إلك ربو ىث صغ رب الحجم
-يعمل عل قياسا لأصوات ومعالجتها،ثم تحفربالعصب السمعي لتوصيل الصوت
-للشخص الذي لا يمكنه سماع الأصوات بطريقة أخرى</p>
+                        <p>In the treatment of Down syndrome, therapeutic activities that are close to being comprehensive in physical, social and psychological situations create a broad-based assessment and treatment plan that also plans for the individual's future life. Therapeutic activities aiming at the maximum degree of independence create a treatment plan that can be adapted to the functional potentials and applications that can be found, developed and adapted in the treatment of Down syndrome, including individuals, with the best skills. An extensive treatment plan is developed in the treatment of Down syndrome, in communication with the family and individual caregiver.</p>
+                        <h3 class="mb-4">Cochlear implant rehabilitation programme</h3>
+                        <img class="img-fluid rounded w-50 float-right ml-4 mb-3" src="img/photos/photo3.jpeg" alt="Image">
+                        <p>Hearing involves more than just recognizing sounds — what we hear affects our ability to learn and how we perceive the world around us. For an adult, severe hearing loss may affect social interaction, functioning, and general health. For children, it can cause severe hearing loss. A cochlear implant is a way to treat people who are deaf or hard of hearing. This cochlear implant is a small electronic device that measures and processes sounds, then digs into the auditory nerve to deliver the sound to the person who cannot hear the sounds in another way.</p>
                     </div>
 
                     <!-- Related Post -->
                     <div class="mb-5 mx-n3">
-                        <h2 class="mb-4 ml-3">منشورات ذات صله</h2>
+                        <h2 class="mb-4 ml-3">Related Post</h2>
                         <div class="owl-carousel post-carousel position-relative">
                             <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3">
                                 <img class="img-fluid" src="img/post-1.jpg" style="width: 80px; height: 80px;">
                                 <div class="pl-3">
-                                    <h5 class="">الأسلوب المعرفي cognitive style</h5>
+                                    <h5 class="">cognitive style</h5>
                                     <div class="d-flex">
                                         <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
                                         <small class="mr-3"><i class="fa fa-folder text-primary"></i> cognitive
@@ -193,7 +165,7 @@ if ($conn->connect_error) {
                             <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3">
                                 <img class="img-fluid" src="img/post-2.jpg" style="width: 80px; height: 80px;">
                                 <div class="pl-3">
-                                    <h5 class="">المضطربون انفعاليا emotionally disturbed </h5>
+                                    <h5 class="">  emotionally disturbed </h5>
                                     <div class="d-flex">
                                         <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
                                         <small class="mr-3"><i class="fa fa-folder text-primary"></i> emotionally
@@ -205,7 +177,7 @@ if ($conn->connect_error) {
                             <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3">
                                 <img class="img-fluid" src="img/post-3.jpg" style="width: 80px; height: 80px;">
                                 <div class="pl-3">
-                                    <h5 class="">التأهيل Habilitaion</h5>
+                                    <h5 class=""> Habilitaion</h5>
                                     <div class="d-flex">
                                         <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
                                         <small class="mr-3"><i class="fa fa-folder text-primary"></i> Habilitaion</small>
@@ -238,8 +210,8 @@ if ($conn->connect_error) {
                     <!-- Author Bio -->
                     <div class="d-flex flex-column text-center bg-primary rounded mb-5 py-5 px-4">
                         <!-- <img src="img/user.jpg" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;"> -->
-                        <h3 class="text-secondary mb-3">سعيد ندا</h3>
-                        <p class="text-white m-0">مدير و منشاء المركز التخصصي للتخاطب باطفيح ودكتور تخاطب و تنميه</p>
+                        <h3 class="text-secondary mb-3">Saied nadaa</h3>
+                        <p class="text-white m-0">Director and founder of the Specialized Center for Speech in Atafih and Doctor of Speech and Development</p>
                     </div>
 
                     <!-- Search Form -->
@@ -249,26 +221,26 @@ if ($conn->connect_error) {
 
                     <!-- Category List -->
                     <div class="mb-5">
-                        <h2 class="mb-4">الفئات</h2>
+                        <h2 class="mb-4">categories</h2>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">الإعاقة العقلية Mental Retardation</a>
+                                <a href="">  Mental Retardation</a>
                                 <span class="badge badge-primary badge-pill">150</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">صعوبات التعلم Learing Disabilities </a>
+                                <a href="">  Learing Disabilities </a>
                                 <span class="badge badge-primary badge-pill">131</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">متعددو الإعاقات multihandicapped</a>
+                                <a href="">  multihandicapped</a>
                                 <span class="badge badge-primary badge-pill">78</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href=""> التشخيص التربوي Educational Diagnosis</a>
+                                <a href="">   Educational Diagnosis</a>
                                 <span class="badge badge-primary badge-pill">56</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="">اختصاصي العلاج التربوي Educational Therapist</a>
+                                <a href="">   Educational Therapist</a>
                                 <span class="badge badge-primary badge-pill">98</span>
                             </li>
                         </ul>
@@ -276,16 +248,16 @@ if ($conn->connect_error) {
 
                     <!-- Single Image -->
                     <div class="mb-5">
-                        <img src="img/blog-1.jpg" alt="" class="img-fluid rounded">
+                        <img src="img/photos/photo22.jpeg" alt="" class="img-fluid rounded">
                     </div>
 
                     <!-- Recent Post -->
                     <div class="mb-5">
-                        <h2 class="mb-4">اخر المنشورات</h2>
+                        <h2 class="mb-4">ecent Post </h2>
                         <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3">
                             <img class="img-fluid" src="img/post-1.jpg" style="width: 80px; height: 80px;">
                             <div class="pl-3">
-                                <h5 class="">التأهيل Habilitaion</h5>
+                                <h5 class=""> Habilitaion</h5>
                                 <div class="d-flex">
                                     <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
                                     <small class="mr-3"><i class="fa fa-folder text-primary"></i> Habilitaion</small>
@@ -296,7 +268,7 @@ if ($conn->connect_error) {
                         <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3">
                             <img class="img-fluid" src="img/post-2.jpg" style="width: 80px; height: 80px;">
                             <div class="pl-3">
-                                <h5 class="">المضطربون انفعاليا emotionally disturbed </h5>
+                                <h5 class="">  emotionally disturbed </h5>
                                 <div class="d-flex">
                                     <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
                                     <small class="mr-3"><i class="fa fa-folder text-primary"></i> emotionally
@@ -308,7 +280,7 @@ if ($conn->connect_error) {
                         <div class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3">
                             <img class="img-fluid" src="img/post-3.jpg" style="width: 80px; height: 80px;">
                             <div class="pl-3">
-                                <h5 class="">الأسلوب المعرفي cognitive style</h5>
+                                <h5 class="">  cognitive style</h5>
                                 <div class="d-flex">
                                     <small class="mr-3"><i class="fa fa-user text-primary"></i> Doctor</small>
                                     <small class="mr-3"><i class="fa fa-folder text-primary"></i> cognitive style</small>
@@ -320,34 +292,30 @@ if ($conn->connect_error) {
 
                     <!-- Single Image -->
                     <div class="mb-5">
-                        <img src="img/blog-2.jpg" alt="" class="img-fluid rounded">
+                        <img src="img/photos/photo7.jpeg" alt="" class="img-fluid rounded">
                     </div>
 
                     <!-- Tag Cloud -->
                     <div class="mb-5">
-                        <h2 class="mb-4">ابرز المواضيع</h2>
+                        <h2 class="mb-4"> The most prominent topics</h2>
                         <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-outline-primary m-1">التعزيز المتقطع / الجزئي</a>
-                            <a href="" class="btn btn-outline-primary m-1">غرفة لقياس السمع</a>
-                            <a href="" class="btn btn-outline-primary m-1">التدرب على السلوك</a>
-                            <a href="" class="btn btn-outline-primary m-1">تحليل المهمة</a>
-                            <a href="" class="btn btn-outline-primary m-1">الأسلوب المعرفي</a>
-                            <a href="" class="btn btn-outline-primary m-1">التخلف النمائي</a>
+                            <a href="" class="btn btn-outline-primary m-1">Intermittent/partial reinforcement</a>
+                            <a href="" class="btn btn-outline-primary m-1">Audiometry room</a>
+                            <a href="" class="btn btn-outline-primary m-1">Behavior practice</a>
+                            <a href="" class="btn btn-outline-primary m-1">Task analysis</a>
+                            <a href="" class="btn btn-outline-primary m-1">Cognitive style</a>
+                            <a href="" class="btn btn-outline-primary m-1">developmental retardation</a>
                         </div>
                     </div>
 
                     <!-- Single Image -->
                     <div class="mb-5">
-                        <img src="img/blog-3.jpg" alt="" class="img-fluid rounded">
+                        <img src="img/photos/photo5.jpeg" alt="" class="img-fluid rounded">
                     </div>
 
                     <!-- Plain Text -->
                     <div>
-                        <h2 class="mb-4">نصائح ارشاديه</h2>
-                        لاتخاذ القرار فيما إذا كنت مرشحا لزراعة قوقعة، يمكنك مقابلة أخصائي زراعة
-القوقعة لدى جونز هوبكب الذين سيتولون تقييم بنية الأذن وإجراء التقييمات
-الطبية والسمعية بالكامل
-                    </div>
+                        <h2 class="mb-4">Guidance tips</h2>To decide whether you are a candidate for a cochlear implant, you can meet with a cochlear implant specialist at Johns Hopkins who will evaluate the structure of the ear and perform the full medical and audiological evaluations</div>
                 </div>
             </div>
         </div>

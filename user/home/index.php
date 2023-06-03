@@ -57,7 +57,8 @@
                             <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
                             <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
+                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form"
+                                class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -77,7 +78,7 @@
                 <p class="text-white mb-4"></p>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+                <img class="img-fluid mt-5" style="border-radius: 50%; height: 300px;" src="img/photo16.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -94,8 +95,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>ساحه الالعاب</h4>
-                            <p class="m-0">نحن نمتلك البيئه المناسبه للتسليه لأطفالنا داخل المركز
+                            <h4>PlayGround</h4>
+                            <p class="m-0">We have the right environment for our children to have fun inside the center
                             </p>
                         </div>
                     </div>
@@ -104,8 +105,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>اغاني و رقص</h4>
-                            <p class="m-0">بالطبع الاستماع هو من اهم طرق للتواصل لدي الاطفال التي نوفرهاه لهم
+                            <h4> Music and Dance </h4>
+                            <p class="m-0">Of course, listening is one of the most important ways to deliver the materials
                             </p>
                         </div>
                     </div>
@@ -114,8 +115,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>روسومات و تشكيل</h4>
-                            <p class="m-0">مساعدتهم علي الرسم بالتالي يساعدهم علي الابداع طيله حياتهم
+                            <h4>Drawings and formation</h4>
+                            <p class="m-0"> Helping them to draw thus helps them to be creative   
                             </p>
                         </div>
                     </div>
@@ -124,8 +125,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>نقل وامن</h4>
-                            <p class="m-0">نحن نوفر بالمركز طرق عديده للنقل الامن لأطفالنا
+                            <h4>Transportation and security</h4>
+                            <p class="m-0">We provide the center with many ways of safe transportation for our children 
                             </p>
                         </div>
                     </div>
@@ -134,10 +135,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>طعام صحي</h4>
-                            <p class="m-0">لاغني عن الطعام الصحي الذي يوفره المرز للاطفال و بذلك يساعدهم علي اكمال
-                                النشاط التعليمي و بناء الجسم
-                            </p>
+                            <h4>Healthy food</h4>
+                            <p class="m-0">I can't do without the healthy food that rice provides for children, thus helping them to complete the educational activity and build the body</p>
                         </div>
                     </div>
                 </div>
@@ -145,10 +144,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>رحله تعليميه</h4>
-                            <p class="m-0">نقوم بالعمل و الجهد لرحله تعليميه لأطفالنا لنجعلهم يعتادوا علي المدارس في
-                                المستقبل
-                            </p>
+                            <h4>ducational trip</h4>
+                            <p class="m-0">We work and effort for an educational journey for our children to get them used to schools in the future</p>
                         </div>
                     </div>
                 </div>
@@ -168,27 +165,23 @@
                     <img class="img-fluid rounded mb-5 mb-lg-0" src="img/photos/photo9.jpeg" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <p class="section-title pr-5"><span class="pr-2">تعرف اكثر علينا</span></p>
-                    <h1 class="mb-4">افضل مركز لأطفالنا</h1>
-                    <p>هدفنا هو مساعده اطفالنا لعيش حياه طبيعيه مليئه بالسعاده بواسطه قدرتهم علي الكتابه و التحدث بدون
-                        اي خوف او تردد نخرج ابطال بفضل مجوهدات الاساتذه اللذين هم علي اعلي مستوي من الخبره و الكفائه
-                        المطلوبه لعمل البيئه المناسبه للعلاج و التحسن </p>
+                    <p class="section-title pr-5"><span class="pr-2">Get to know us more</span></p>
+                    <h1 class="mb-4">The best center for our children</h1>
+                    <p>Our goal is to help our children live a normal life full of happiness through their ability to write and speak without any fear or hesitation.</p>
                     <div class="row pt-2 pb-4">
                         <div class="col-6 col-md-4">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" style=" height: 200px;" src="img/photos/photo17.jpeg" alt="">
                         </div>
                         <div class="col-6 col-md-8">
                             <ul class="list-inline m-0">
                                 <li class="py-2 border-top border-bottom"><i
-                                        class="fa fa-check text-primary mr-3"></i>جلسات تخاطب و تنميه مهارات</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>صعوبات تعلم
-                                    و تعديل سلوك</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>
-                                    اختبار ذكاء و ارشاد نفسي</li>
+                                        class="fa fa-check text-primary mr-3"></i>Speech and skills development sessions</li>
+                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Learning difficulties and behavior modification</li>
+                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Intelligence test and psychological counseling</li>
                             </ul>
                         </div>
                     </div>
-                    <a href="single.php" class="btn btn-primary mt-2 py-2 px-4">تعرف اكثر</a>
+                    <a href="single.php" class="btn btn-primary mt-2 py-2 px-4">know more</a>
                 </div>
             </div>
         </div>
@@ -201,96 +194,92 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">اشهر البرامج</span></p>
-                <h1 class="mb-4">برامج علاجيه من اجل اطفالنا</h1>
+                <p class="section-title px-5"><span class="px-2">Main programs</span></p>
+                <h1 class="mb-4">Treatment programs for our children</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 mb-5">
                     <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
+                        <img class="card-img-top mb-2" style="height: 250px;"src="img/photos/dawn.jpeg" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title">علاج متلازمة داون</h4>
-                            <p class="card-text">العديد من الدراسات حول علاج متلازمة داون مستمرة. تحدث متلازمه داون
-                                نتيجة لاختلاف وراث ىف وجود كروموسوم واحد ىف زوج الكروموسوم الحادي</p>
+                            <h4 class="card-title">Down syndrome treatment</h4>
+                            <p class="card-text">Numerous studies on the treatment of Down syndrome are ongoing. Down syndrome occurs as a result of a genetic difference in the presence of one chromosome in the first pair of chromosomes</p>
                         </div>
                         <div class="card-footer bg-transparent py-4 px-5">
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>سن الاطفال</strong></div>
-                                <div class="col-6 py-1">3 - 6 اعوام</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>children's age</strong></div>
+                                <div class="col-6 py-1">3 - 6 years</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>عدد المقاعد</strong></div>
-                                <div class="col-6 py-1">40 مقعد</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Number of seats</strong></div>
+                                <div class="col-6 py-1">40 seat</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">08:00 - 10:00</div>
                             </div>
                             <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
-                                <div class="col-6 py-1">$290 / شهريا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
+                                <div class="col-6 py-1">$290 / month</div>
                             </div>
                         </div>
-                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                        <img class="card-img-top mb-2" style="height: 300px;"src="img/photos/talk.jpeg" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title">علاج التأخر في النطق عند الأطفال</h4>
-                            <p class="card-text">التحدث ببطء مع الطفل يك يتمكن من فهم جميع الكلمات المكونة للجمله يجب
-                                منح الطفل الوقت الكافي للتعبير عن نفسه، حتي وإن لم يكن سريعا بما فيه الكفايه</p>
+                            <h4 class="card-title">Treatment of delay in speech in children</h4>
+                            <p class="card-text">Speak slowly to the child so that he can understand all the words that make up the sentence. The child must be given enough time to express himself, even if he is not fast enough.</p>
                         </div>
                         <div class="card-footer bg-transparent py-4 px-5">
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>سن الاطفال</strong></div>
-                                <div class="col-6 py-1">3 - 6 اعوام</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>children's age</strong></div>
+                                <div class="col-6 py-1">3 - 6 years</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>عدد المقاعد</strong></div>
-                                <div class="col-6 py-1">30 مقعدا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Number of seats</strong></div>
+                                <div class="col-6 py-1">30 seat</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
-                                <div class="col-6 py-1">012:00 - 1:00</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
+                                <div class="col-6 py-1">12:00 - 1:00</div>
                             </div>
                             <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
-                                <div class="col-6 py-1">$200 / شهريا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
+                                <div class="col-6 py-1">$200 / month</div>
                             </div>
                         </div>
-                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-3.jpg" alt="">
+                        <img class="card-img-top mb-2" style="height: 300px;" src="img/photos/cochlear.jpeg" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title"> ربنامج التأهيل زراعة القوقعة</h4>
-                            <p class="card-text">تتضمن عملية السمع أكبر من مجرد التعرف عل الأصوات فحسب — فما نستمع
-                                إليه يؤثر عل قدرتنا عل التعلم وكيفية إدراكنا للعالم من حولنا بالنسبة للبالغ ري،
-                                قد يؤثر فقدان السمع الحاد عل تفاعلهم الاجتماع،</p>
+                            <h4 class="card-title">Cochlear implant rehabilitation programme</h4>
+                            <p class="card-text"> Hearing involves more than just recognizing sounds — what we hear affects our ability to learn and how we perceive the world around us. For adults, severe hearing loss may affect their social interaction</p>
                         </div>
                         <div class="card-footer bg-transparent py-4 px-5">
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>سن الاطفال</strong></div>
-                                <div class="col-6 py-1">3 - 6 اعوام</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>children's age</strong></div>
+                                <div class="col-6 py-1">3 - 6 years</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>عدد المقاعد</strong></div>
-                                <div class="col-6 py-1">20 مقعدا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Number of seats</strong></div>
+                                <div class="col-6 py-1">20 seat</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">04:00 - 10:00</div>
                             </div>
                             <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
-                                <div class="col-6 py-1">$350 / شهريا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
+                                <div class="col-6 py-1">$350 / month</div>
                             </div>
                         </div>
-                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
                     </div>
                 </div>
             </div>
@@ -304,30 +293,27 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
-                    <p class="section-title pr-5"><span class="pr-2">احجز مقعدا الان</span></p>
-                    <h1 class="mb-4">احجز مقعدا لطفلك</h1>
-                    <p>نحن قادرون علي التعامل مع كافه الاختصاصات لدي كل الاعمار للاطفال من ذوي الاحتايجات الخاصه و لدينا
-                        برامج متعدده تشمل كافه الامراض الاتي ذكرهاه بالاسفل و اكثر و علي اعلي مستوي من الخبره و الكفائه
-                        لا تفوت فرصه البزامج العلاجيه علي طفلك و قم بالحجزز سريعا للحصول علي نتائج سريعه و فعاله في اقرب
-                        وقت ممكن</p>
+                    <p class="section-title pr-5"><span class="pr-2">Reserve a seat now</span></p>
+                    <h1 class="mb-4">Reserve a seat for your child</h1>
+                    <p>We are able to deal with all specialties of all ages for children with special needs, and we have multiple programs that include all the diseases mentioned below and more, and at the highest level of experience and competence. Do not miss the opportunity for a therapeutic program for your child, and book quickly to get quick results and effective as soon as possible</p>
                     <ul class="list-inline m-0">
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>الإعاقة السمعية Hearing impairment
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>  Hearing impairment
                         </li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> الإعاقة البصرية impairment Visual
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>  impairment Visual
                         </li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>الإعاقة الحركية Physical
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>  Physical
                             impairment .</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>الإعاقة الانفعالية Emotional
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>  Emotional
                             impairment </li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> صعوبات التعلم Learing
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>   Learing
                             Disabilities </li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> التذكر البصري Visual Memory</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> متعددو الإعاقات multihandicapped
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>   Visual Memory</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>   multihandicapped
                         </li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> المعاقون تربويا educational
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>   educational
                             handicapped</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> نشاط عشوائي Random Activity</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> المضطربون انفعاليا emotionally
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>   Random Activity</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>   emotionally
                             disturbed</li>
                     </ul>
 
@@ -365,8 +351,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>وليد علي</h4>
-                    <i>تربيه خاصه</i>
+                    <h4>Waleed ali</h4>
+                    <i>special breeding</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -381,8 +367,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>سعيد ندا</h4>
-                    <i>مدير المركز</i>
+                    <h4>Saied nada</h4>
+                    <i>Center manager</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -397,8 +383,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>وفاء خميس</h4>
-                    <i>مدرب تخاطب</i>
+                    <h4> wafaa khames</h4>
+                    <i>Speech coach</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -413,8 +399,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>رضا توفيق</h4>
-                    <i>اخصائي تدريب</i>
+                    <h4>Reda tawfek</h4>
+                    <i>Training Specialist</i>
                 </div>
             </div>
         </div>
@@ -427,62 +413,47 @@
     <div class="container-fluid py-5">
         <div class="container p-0">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">اراء</span></p>
-                <h1 class="mb-4">ماذا يقول اولياء الأمور!</h1>
+                <p class="section-title px-5"><span class="px-2">pinions</span></p>
+                <h1 class="mb-4">What do parents say!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        ابني كان لديه متلازمه دون و بفضلهم قد تم الاعتياد عليهاه
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>My son had Down Syndrome and thanks to them he is getting used to it</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-1.jpg" style="width: 70px; height: 70px;"
-                            alt="Image">
                         <div class="pl-3">
-                            <h5>ولي امر </h5>
+                            <h5>In loco parentis</h5>
                             <i></i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        بفضل الاستاذ الاستشاري قد تم توعيتي اثناء فتره الحمل
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>Thanks to the consultant professor, I was sensitized during pregnancy</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-2.jpg" style="width: 70px; height: 70px;"
-                            alt="Image">
                         <div class="pl-3">
-                            <h5>ربه منزل</h5>
+                            <h5>housewife</h5>
                             <i> </i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        انا اشيد بالقوه و الاتقان لجوده التعليم التي يحصل عليهاه الطلبه
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>I attest to the strength and mastery of the quality of education that students receive</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-3.jpg" style="width: 70px; height: 70px;"
-                            alt="Image">
                         <div class="pl-3">
-                            <h5>استاذ جامعه</h5>
+                            <h5>professor</h5>
                             <i></i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        اخي لم يعد لديه الخوف من التحدث و التعامل مع الاخريين بفضل البرنامج العلاجي
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>My brother no longer has the fear of speaking and dealing with others.Thanks to the treatment program</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-4.jpg" style="width: 70px; height: 70px;"
-                            alt="Image">
+                        
                         <div class="pl-3">
-                            <h5> اخ لمريض</h5>
+                            <h5>Patient's brother</h5>
                             <i></i>
                         </div>
                     </div>
@@ -509,7 +480,8 @@
                     <i class="flaticon-043-teddy-bear"></i>
                     <span class="text-white">For contact</span>
                 </a>
-                <p>The center's house is happy to communicate with you and follow all the students' activities through our social network</p>
+                <p>The center's house is happy to communicate with you and follow all the students' activities through
+                    our social network</p>
                 <div class="d-flex justify-content-start mt-4">
 
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
@@ -562,8 +534,10 @@
         </div>
         <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="https://www.facebook.com/Center.altahsse">Speech specialist </a>
-                All rights reserved to the Faculty of Computing and Artificial Intelligence,<a class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">Helwan University</a>
+                &copy; <a class="text-primary font-weight-bold" href="https://www.facebook.com/Center.altahsse">Speech
+                    specialist </a>
+                All rights reserved to the Faculty of Computing and Artificial Intelligence,<a
+                    class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">Helwan University</a>
             </p>
         </div>
     </div>

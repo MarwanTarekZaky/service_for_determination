@@ -122,12 +122,9 @@ $success_message = '';
     <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
         <div class="row align-items-center px-3">
             <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
                 <p class="text-white mb-4"></p>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
             </div>
         </div>
     </div>
@@ -143,33 +140,33 @@ $success_message = '';
 
             <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message ?></h1>
                 <div class="bg-light p-5">
-                    <h2 class="mb-4">اترك ملاحظه</h2>
+                    <h2 class="mb-4">Leave note</h2>
                     <form method="post">
                         <div class="form-group">
-                            <label for="doctor_name">اسم الطبيب</label>
+                            <label for="doctor_name">Doctor name</label>
                             <input name="doctor_name" type="text" class="form-control" id="doctor_name"
-                                placeholder="اسم الطبيب" required>
+                                placeholder="Doctor name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="user_name">اسم الطفل</label>
-                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="اسم المريض"
+                            <label for="user_name">Patient name</label>
+                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="patient name"
                                 required>
                         </div>
 
                         <div class="form-group">
-                            <label for="subject_name">عنوان الموضوع</label>
+                            <label for="subject_name">Topic</label>
                             <input name="subject_name" type="text" class="form-control" id="subject_name"
-                                placeholder="الموضوع عن ..." required>
+                                placeholder="topic about ..." required>
                         </div>
 
                         <div class="form-group">
-                            <label for="note">الرساله</label>
+                            <label for="note">Message</label>
                             <textarea name="note" id="note" cols="30" rows="5" class="form-control"
-                                placeholder="اريد ان الفت الانتباه الي..." required></textarea>
+                                placeholder="I want to pay attention to ..." required></textarea>
                         </div>
                         <div class="form-group mb-0">
-                            <input name="set_note" type="submit" value="اترك ملاحظه" class="btn btn-primary px-3">
+                            <input name="set_note" type="submit" value="leave note" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>
@@ -184,11 +181,11 @@ $success_message = '';
           <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
-                    <h2 class="mb-4">اعرض الملاحظات</h2>
+                    <h2 class="mb-4">Display notes</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="اسم الطبيب">
-                            <input name="list_notes" type="submit" value="اعرض جميع الملاحظات" class="btn btn-primary px-3">
+                            <input type="search" name="search_name" id="search_name" placeholder="Doctor name">
+                            <input name="list_notes" type="submit" value="List all notes" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>

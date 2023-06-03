@@ -101,12 +101,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
         <div class="row align-items-center px-3">
             <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
+              
                 <p class="text-white mb-4"></p>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+            
             </div>
         </div>
     </div>
@@ -118,8 +117,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         <div class="container-fluid pt-5 pb-3">
             <div class="container">
                 <div class="text-center pb-2">
-                    <p class="section-title px-5"><span class="px-2">ملتقطات</span></p>
-                    <h1 class="mb-4">مقاطع تعليميه </h1>
+                    <p class="section-title px-5"><span class="px-2">pickers</span></p>
+                    <h1 class="mb-4">Tutorial clips</h1>
                 </div>
                 <div class="row portfolio-container">
                     <?php

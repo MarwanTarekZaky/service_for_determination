@@ -54,7 +54,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                         mysqli_query($conn, $query);
                         $_SESSION['message'] = "Upload successfully.";
-                        $success_message_video="تم الارسال بنجاح";
+                        $success_message_video="sent successfully";
 
                     }
                 }
@@ -90,7 +90,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 $insert = $conn->query("INSERT into assignment_images (user_name,file_name, uploaded_on) VALUES ('" . $user_name . "','" . $fileName . "', NOW())");
                 if ($insert) {
                     $success_message_image = "The file " . $fileName . " has been uploaded successfully.";
-                    $success_message_image="تم الارسال بنجاح";
+                    $success_message_image="Sent successfully";
                     
                 } else {
                     $success_message_image = "File upload failed, please try again.";
@@ -104,7 +104,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         // Display status message
     //echo $success_message_image;
     } else {
-        $success_message_image = 'Please select a file to upload.';
+        $success_message_image = '';
     }
 
     
@@ -128,7 +128,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             $insert = $conn->query("INSERT into assignment_audios (user_name,file_name, uploaded_on) VALUES ('" . $user_name . "','" . $file_name . "', NOW())");
             if ($insert) {
                 $success_message_audio = "The file " . $file_name . " has been uploaded successfully.";
-                $success_message_audio="تم الارسال بنجاح";
+                $success_message_audio="Sent successfully";
                 
             } else {
                 $success_message_audio = "File upload failed, please try again.";
@@ -217,12 +217,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
         <div class="row align-items-center px-3">
             <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
                 <p class="text-white mb-4"></p>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
             </div>
         </div>
     </div>
@@ -251,11 +248,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container">
                 <div class="bg-light p-5">
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message_video ?></h1>
-                    <h2 class="mb-4">اضف فيديو</h2>
+                    <h2 class="mb-4">upload video</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='file'>
-                        <input type="text" name="user_name" id="user_name" placeholder="اسم المستخدم" required>
-                        <input type='submit' value='اضف' name='but_upload'>
+                        <input type="text" name="user_name" id="user_name" placeholder="patient name" required>
+                        <input type='submit' value='upload' name='but_upload'>
                     </form>
                 </div>
             </div>
@@ -270,11 +267,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container">
                 <div class="bg-light p-5">
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message_image ?></h1>
-                    <h2 class="mb-4">اضف صوره</h2>
+                    <h2 class="mb-4">upload image</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='file'>
-                        <input type="text" name="user_name" id="user_name" placeholder="اسم المستخدم" required>
-                        <input type='submit' value='اضف' name='upload_image'>
+                        <input type="text" name="user_name" id="user_name" placeholder="patient name" required>
+                        <input type='submit' value='upload' name='upload_image'>
                     </form>
                 </div>
             </div>
@@ -289,11 +286,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container">
                 <div class="bg-light p-5">
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message_audio ?></h1>
-                    <h2 class="mb-4">اضف صوت</h2>
+                    <h2 class="mb-4">upload voice</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='audio_file' id="audio_file">
-                        <input type="text" name="user_name" id="user_name" placeholder="اسم المستخدم" required>
-                        <input type='submit' value='اضف' name='upload_audio'>
+                        <input type="text" name="user_name" id="user_name" placeholder="patient name" required>
+                        <input type='submit' value='upload' name='upload_audio'>
                     </form>
                 </div>
             </div>
