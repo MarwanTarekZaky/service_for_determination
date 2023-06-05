@@ -55,8 +55,7 @@
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -69,18 +68,13 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-        <div class="row align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
-                <p class="text-white mb-4"></p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+    <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Classes</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
     <!-- Header End -->
 
 
@@ -88,106 +82,92 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">اشهر البرامج</span></p>
-                <h1 class="mb-4">برامج علاجيه من اجل اطفالنا</h1>
+                <p class="section-title px-5"><span class="px-2">Main programs</span></p>
+                <h1 class="mb-4">Treatment programs for our children</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 mb-5">
                     <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
+                        <img class="card-img-top mb-2" style="height: 250px;"src="img/photos/dawn.jpeg" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title">علاج متلازمة داون</h4>
-                            <p class="card-text">العديد من الدراسات حول علاج متلازمة داون مستمرة. تحدث متلازمه داون نتيجة لاختلاف وراث ىف وجود كروموسوم واحد ىف زوج الكروموسوم الحادي</p>
+                            <h4 class="card-title">Down syndrome treatment</h4>
+                            <p class="card-text">Numerous studies on the treatment of Down syndrome are ongoing. Down syndrome occurs as a result of a genetic difference in the presence of one chromosome in the first pair of chromosomes</p>
                         </div>
                         <div class="card-footer bg-transparent py-4 px-5">
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>سن الاطفال</strong></div>
-                                <div class="col-6 py-1">3 - 6 اعوام</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>children's age</strong></div>
+                                <div class="col-6 py-1">3 - 6 years</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>عدد المقاعد</strong></div>
-                                <div class="col-6 py-1">40 مقعد</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Number of seats</strong></div>
+                                <div class="col-6 py-1">40 seat</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">08:00 - 10:00</div>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong> نوع الفصيله</strong></div>
-                                <div class="col-6 py-1">الفصيله 1</div>
-                            </div>
                             <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
-                                <div class="col-6 py-1">$290 / شهريا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
+                                <div class="col-6 py-1">$290 / month</div>
                             </div>
                         </div>
-                        <a href="#BOOKNOW" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                        <img class="card-img-top mb-2" style="height: 300px;"src="img/photos/talk.jpeg" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title">علاج التأخر في النطق عند الأطفال</h4>
-                            <p class="card-text">التحدث ببطء مع الطفل يك يتمكن من فهم جميع الكلمات المكونة للجمله يجب منح الطفل الوقت الكافي للتعبير عن نفسه،  حتي وإن لم يكن سريعا بما فيه الكفايه</p>
+                            <h4 class="card-title">Treatment of delay in speech in children</h4>
+                            <p class="card-text">Speak slowly to the child so that he can understand all the words that make up the sentence. The child must be given enough time to express himself, even if he is not fast enough.</p>
                         </div>
                         <div class="card-footer bg-transparent py-4 px-5">
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>سن الاطفال</strong></div>
-                                <div class="col-6 py-1">3 - 6 اعوام</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>children's age</strong></div>
+                                <div class="col-6 py-1">3 - 6 years</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>عدد المقاعد</strong></div>
-                                <div class="col-6 py-1">30 مقعدا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Number of seats</strong></div>
+                                <div class="col-6 py-1">30 seat</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
-                                <div class="col-6 py-1">012:00 - 1:00</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong> نوع الفصيله</strong></div>
-                                <div class="col-6 py-1">الفصيله 2</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
+                                <div class="col-6 py-1">12:00 - 1:00</div>
                             </div>
                             <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
-                                <div class="col-6 py-1">$200 / شهريا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
+                                <div class="col-6 py-1">$200 / month</div>
                             </div>
                         </div>
-                        <a href="#BOOKNOW" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-3.jpg" alt="">
+                        <img class="card-img-top mb-2" style="height: 300px;" src="img/photos/cochlear.jpeg" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title"> ربنامج التأهيل زراعة القوقعة</h4>
-                            <p class="card-text">تتضمن عملية السمع أكبر من مجرد التعرف عل الأصوات فحسب — فما نستمع
-إليه يؤثر عل قدرتنا عل التعلم وكيفية إدراكنا للعالم من حولنا بالنسبة للبالغ ري،
-قد يؤثر فقدان السمع الحاد عل تفاعلهم الاجتماع،</p>
+                            <h4 class="card-title">Cochlear implant rehabilitation programme</h4>
+                            <p class="card-text"> Hearing involves more than just recognizing sounds — what we hear affects our ability to learn and how we perceive the world around us. For adults, severe hearing loss may affect their social interaction</p>
                         </div>
                         <div class="card-footer bg-transparent py-4 px-5">
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>سن الاطفال</strong></div>
-                                <div class="col-6 py-1">3 - 6 اعوام</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>children's age</strong></div>
+                                <div class="col-6 py-1">3 - 6 years</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>عدد المقاعد</strong></div>
-                                <div class="col-6 py-1">20 مقعدا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Number of seats</strong></div>
+                                <div class="col-6 py-1">20 seat</div>
                             </div>
                             <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>ميعاد الفصل</strong></div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">04:00 - 10:00</div>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong> نوع الفصيله</strong></div>
-                                <div class="col-6 py-1">الفصيله 3</div>
-                            </div>
                             <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>رسوم البرنامج</strong></div>
-                                <div class="col-6 py-1">$350 / شهريا</div>
+                                <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
+                                <div class="col-6 py-1">$350 / month</div>
                             </div>
                         </div>
-                        <a href="#BOOKNOW" class="btn btn-primary px-4 mx-auto mb-4">احجز الان</a>
+                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
                     </div>
                 </div>
             </div>
@@ -201,33 +181,33 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
-                    <p class="section-title pr-5"><span class="pr-2">احجز مقعدا</span></p>
-                    <h1 class="mb-4">احجز مقعدا من أجل طفلك</h1>
-                    <p>بواسطه حجز المقعد لطفلك في مركزنا نستطيع حينهاه المحاوله علي مساعده طفلك في التغلب علي الاحتياج الخاص لديه طيله حياته ..،لماذا الانتظار احجز الان!!</p>
+                    <p class="section-title pr-5"><span class="pr-2">Reserve a seat</span></p>
+                    <h1 class="mb-4">Reserve a seat for your child</h1>
+                    <p>By reserving a seat for your child in our center, we can then try to help your child overcome the special needs he has throughout his life .. Why wait, book now!!</p>
                     <ul class="list-inline m-0">
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>افضل البرامج العلاجيه</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>بيئه آمنه للاطفال داخل المركز</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>معتمد من المراكز العليا للشئون</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i> The best treatment programs</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>A safe environment for children inside the center</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Accredited by the higher centers of affairs Book now</li>
                     </ul>
-                    <a href="#BOOKNOW" class="btn btn-primary mt-4 py-2 px-4">احجز الان</a>
+                    <a href="#BOOKNOW" class="btn btn-primary mt-4 py-2 px-4">book now</a>
                 </div>
                 <div id="BOOKNOW" class="col-lg-5">
                     <div class="card border-0">
                         <div class="card-header bg-secondary text-center p-4">
-                            <h1 class="text-white m-0">احجز مقعدا</h1>
+                            <h1 class="text-white m-0">Book a seat</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form>
                                 <div class="form-group">
                                     <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>اختار نوع البرنامج</option>
-                                        <option value="1">الفصيله الاولي</option>
-                                        <option value="2">الفصيله الثانيه</option>
-                                        <option value="3">الفصيله الثالثه</option>
+                                        <option selected>Choose the right program</option>
+                                        <option value="1">First Type</option>
+                                        <option value="2">Second Type</option>
+                                        <option value="3">Third type</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <a href="../registration_and_login/signup.php" class="btn btn-secondary btn-block border-0 py-3" >احجز مقعدا</a>
+                                    <a href="../../registration_and_login/signup.php" class="btn btn-secondary btn-block border-0 py-3" >Book</a>
                                 </div>
                             </form>
                         </div>

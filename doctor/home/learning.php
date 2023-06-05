@@ -141,9 +141,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>        
                     <a href="logout.php" class="nav-item nav-link">LogOut</a>
-                    <a href="single.php" class="nav-item nav-link">Rehabilitation</a>
-                    <a href="blog.php" class="nav-item nav-link">Events</a>
-                    <a href="examples.php" class="nav-item nav-link">Examples</a>
+                    <a href="single.php" class="nav-item nav-link">Events</a>
+                    <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
                     <a href="comments.php" class="nav-item nav-link">Comments</a>
                     <a href="assignment.php" class="nav-item nav-link">Assignments</a>
                     <a href="progress.php" class="nav-item nav-link">progress</a>
@@ -158,12 +157,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
         <!-- Header Start -->
         <div class="container-fluid bg-primary mb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 font-weight-bold text-white"> محتوي التعليم</h3>
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Learning lessons</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0"><a class="text-white" href="index.php">الصفحه الرئيسيه</a></p>
-                    <p class="m-0 px-2">/</p>
-                    <p class="m-0"></p>
                 </div>
             </div>
         </div>
@@ -178,58 +174,56 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container">
                 <div class="bg-light p-5">
                     <h1
-                        style="display: block; width: 100%; margin: 50px; font-family: 'Times New Roman', Times, serif; color: cadetblue;">
-                        اضف درس تعليمي</h1>
-
+                        style="display: block; width: 100%; margin: 50px; font-family: 'Times New Roman', Times, serif; color: cadetblue;">Add educational content</h1>
                     <form method="post" enctype='multipart/form-data'>
                         <div class="form-group">
-                            <label for="doctor_name">اسم الطبيب</label>
+                            <label for="doctor_name">Doctor name</label>
                             <input name="doctor_name" type="text" class="form-control" id="doctor_name"
-                                placeholder=" اسم الطبيب ..." required>
+                                placeholder="doctor name ..." required>
                         </div>
                         <div class="form-group">
-                            <label for="lesson_name">عنوان الموضوع</label>
+                            <label for="lesson_name">Lesson name</label>
                             <input name="lesson_name" type="text" class="form-control" id="lesson_name"
-                                placeholder="الموضوع عن ..." required>
+                                placeholder="lesson about ..." required>
                         </div>
                         <div class="form-group">
-                            <label for="disease_type"> نوع المرض</label>
+                            <label for="disease_type">Disease type</label>
                             <input name="disease_type" type="number" class="form-control" id="disease_type" max="3" min="1"
-                                placeholder="نوع المرض" required>
+                                placeholder="Disease type" required>
                         </div>
                         <div class="form-group">
-                            <label for="text_content">المحتوي النصي للدرس</label>
+                            <label for="text_content">The textual content of the lesson</label>
                             <textarea name="text_content" id="text_content" cols="30" rows="5" class="form-control"
-                                placeholder="اريد ان اتحدث عن...." required></textarea>
+                                placeholder="I want to talk about...." required></textarea>
                         </div>
                         <div class="form-group">
                             <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;">
                                 <?php echo $success_message_video ?>
                             </h1>
-                            <label for="video">اضف فيديو</label>
+                            <label for="video">Add video clip</label>
                             <input name="video" type="file" class="form-control" id="video">
                         </div>
                         <div class="form-group">
                             <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;">
                                 <?php echo $success_message_image ?>
                             </h1>
-                            <label for="image">اضف صوره</label>
+                            <label for="image">Add image</label>
                             <input name="image" type="file" class="form-control" id="image">
                         </div>
                         <div class="form-group">
                             <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;">
                                 <?php echo $success_message_audio ?>
                             </h1>
-                            <label for="audio_file">اضف مقطع صوتي</label>
+                            <label for="audio_file">Add an audio clip</label>
                             <input name="audio_file" type="file" class="form-control" id="audio_file">
                         </div>
                         <div class="form-group">
-                            <label for="assignment">المحتوي النصي للدرس</label>
+                            <label for="assignment">Textual content</label>
                             <textarea name="assignment" id="assignment" cols="30" rows="5" class="form-control"
-                                placeholder=" الواجب المنزلي المطلوب هو ...." required></textarea>
+                                placeholder="The required asignment for the lesson ...." required></textarea>
                         </div>
                         <div class="form-group mb-0">
-                            <input name="set_lesson" type="submit" value="اضف درس" class="btn btn-primary px-3">
+                            <input name="set_lesson" type="submit" value="Add lesson" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>

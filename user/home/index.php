@@ -56,9 +56,7 @@
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form"
-                                class="dropdown-item">Donation</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>

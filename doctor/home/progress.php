@@ -92,9 +92,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                 <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>        
                     <a href="logout.php" class="nav-item nav-link">LogOut</a>
-                    <a href="single.php" class="nav-item nav-link">Rehabilitation</a>
-                    <a href="blog.php" class="nav-item nav-link">Events</a>
-                    <a href="examples.php" class="nav-item nav-link">Examples</a>
+                    <a href="single.php" class="nav-item nav-link">Events</a>
+                    <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
                     <a href="comments.php" class="nav-item nav-link">Comments</a>
                     <a href="assignment.php" class="nav-item nav-link">Assignments</a>
                     <a href="learning.php" class="nav-item nav-link">Learning</a>
@@ -109,15 +108,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">صفحه الاداء</h3>
-            <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">الصفحه الرئيسيه</a></p>
-                <p class="m-0 px-2">/</p>
-                <p class="m-0"></p>
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Progress</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
     <!-- Header End -->
 
 
@@ -129,25 +125,25 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container">
                 <div class="bg-light p-5">
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message ?></h1>
-                    <h2 class="mb-4">قيم الاداء</h2>
+                    <h2 class="mb-4">Rate and evaluate progress</h2>
                     <form method="post">
                         <div class="form-group">
-                            <label for="user_name">اسم الطفل</label>
-                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="اسم المريض"
+                            <label for="user_name">Patient name</label>
+                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="Patient name"
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="lesson_name">عنوان الموضوع</label>
+                            <label for="lesson_name">Lesson name</label>
                             <input name="lesson_name" type="text" class="form-control" id="lesson_name"
-                                placeholder="الموضوع عن ..." required>
+                                placeholder="Lesson ..." required>
                         </div>
                         <div class="form-group">
-                            <label for="grade">تقيم الاداء</label>
+                            <label for="grade">Grades</label>
                             <input type="number" max="10" min="0" name="grade" id="grade"  class="form-control"
-                                placeholder="وضع الدرجه للطالب.." required >
+                                placeholder="Set patient grade.." required >
                         </div>
                         <div class="form-group mb-0">
-                            <input name="set_grade" type="submit" value="اضف تقييم" class="btn btn-primary px-3">
+                            <input name="set_grade" type="submit" value="Add grade" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>
@@ -159,11 +155,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
-                    <h2 class="mb-4">اعرض التقييمات</h2>
+                    <h2 class="mb-4">List previous grades</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="اسم المريض">
-                            <input name="list_grade" type="submit" value="اعرض جميع التقييمات" class="btn btn-primary px-3">
+                            <input type="search" name="search_name" id="search_name" placeholder="Patient name">
+                            <input name="list_grade" type="submit" value="View" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>
@@ -186,9 +182,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             if (mysqli_num_rows($res) > 0) {
                                 echo "<table>";
                                 echo "<tr>";
-                                echo "<th>اسم المريض</th>";
-                                echo "<th>عنوان الدرس</th>";
-                                echo "<th>التقييم</th>";
+                                echo "<th>Patient </th>";
+                                echo "<th>Lesson</th>";
+                                echo "<th>Grade</th>";
                                 echo "</tr>";
                                 while ($row = mysqli_fetch_array($res)) {
                                     echo "<tr>";
@@ -222,11 +218,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="bg-light p-5">
 
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message ?></h1>
-                    <h2 class="mb-4">احذف التقييمات</h2>
+                    <h2 class="mb-4">Remove previous grades</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="اسم المريض">
-                            <input name="remove_grades" type="submit" value="احذف جميع االتقييمات"
+                            <input type="search" name="search_name" id="search_name" placeholder="Patient name">
+                            <input name="remove_grades" type="submit" value="Remove"
                                 class="btn btn-primary px-3">
                         </div>
                     </form>
@@ -243,17 +239,25 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             $search_name = $_POST['search_name'];
 
                         $sql = "DELETE FROM grades WHERE user_name = '$search_name'";
+                        $sql2 ="SELECT * FROM grades WHERE user_name = '$search_name'";
+                        $result = mysqli_query($conn, $sql2);
 
-                        if ($conn->query($sql) === TRUE) {
-                            echo "<h1>All grades deleted successfully</h1>";
+                        if (mysqli_num_rows($result) > 0) {
+                    
+                            if ($conn->query($sql) === TRUE) {
+                                echo "<h1>All grades deleted successfully</h1>";
                 
-                             $success_message = "All grades deleted successfully";
+                                 $success_message = "All grades deleted successfully";
                 
-                        } else {
+                            } else {
                             echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
+                            }
 
-                        $conn->close();
+                            $conn->close();
+                        }else {
+                            echo "<h1> Patient does not exist </h1>";
+                            // header("Location: index.php?error=Incorect User name or password");
+                        }
 
                     }
 

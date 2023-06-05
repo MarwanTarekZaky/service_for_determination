@@ -53,7 +53,7 @@ if ($conn->query($sql) === TRUE) {
 
     <head>
         <meta charset="utf-8">
-        <title>التخصصي للتخاطب</title>
+        <title>Speech specialist</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free HTML Templates" name="keywords">
         <meta content="Free HTML Templates" name="description">
@@ -94,8 +94,7 @@ if ($conn->query($sql) === TRUE) {
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>        
                     <a href="logout.php" class="nav-item nav-link">LogOut</a>
-                    <a href="blog.php" class="nav-item nav-link">Events</a>
-                    <a href="examples.php" class="nav-item nav-link">Examples</a>
+                    <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
                     <a href="comments.php" class="nav-item nav-link">Comments</a>
                     <a href="assignment.php" class="nav-item nav-link">Assignments</a>
                     <a href="progress.php" class="nav-item nav-link">progress</a>
@@ -110,12 +109,9 @@ if ($conn->query($sql) === TRUE) {
 
         <!-- Header Start -->
         <div class="container-fluid bg-primary mb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 font-weight-bold text-white">اخر الانشطه</h3>
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Last event</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0"><a class="text-white" href="">Home</a></p>
-                    <p class="m-0 px-2">/</p>
-                    <p class="m-0">نشاطات المركز</p>
                 </div>
             </div>
         </div>

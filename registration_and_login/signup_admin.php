@@ -24,7 +24,7 @@ if ($conn->connect_error) {
         VALUES ('$name', '$pass')";
         
         if ($conn->query($sql) === TRUE) {
-          echo "<h1>New Admin created successfully</h1>";
+          echo "<h1>New Admin account created successfully</h1>";
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -43,7 +43,7 @@ if ($conn->connect_error) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>أنشاء مستخدم</title>
+    <title>Create account</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -61,24 +61,24 @@ if ($conn->connect_error) {
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">انشاء حساب مدير موقع </h2>
+                        <h2 class="form-title">Create admin account</h2>
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="الاسم" required minlength="4" maxlength="25"/>
+                                <input type="text" name="name" id="name" placeholder="Name" required minlength="4" maxlength="25"/>
                             </div>   
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="الرقم السري" required />
+                                <input type="password" name="pass" id="pass" placeholder="Password" required />
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="انشاء" />
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Create" />
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
                         <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="login.php" class="signup-image-link">بالفعل مستخدم</a>
+                        <a href="login.php" class="signup-image-link">Alerady user</a>
                     </div>
                 </div>
             </div>

@@ -55,8 +55,7 @@
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -69,22 +68,18 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-        <div class="row align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
-                <p class="text-white mb-4"></p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+    <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">About-us</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
     <!-- Header End -->
 
 
     <!-- About Start -->
+  
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -92,28 +87,28 @@
                     <img class="img-fluid rounded mb-5 mb-lg-0" src="img/photos/photo9.jpeg" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <p class="section-title pr-5"><span class="pr-2">تعرف اكثر علينا</span></p>
-                    <h1 class="mb-4">افضل مركز لأطفالنا</h1>
-                    <p>هدفنا هو مساعده اطفالنا لعيش حياه طبيعيه مليئه بالسعاده بواسطه قدرتهم علي الكتابه و التحدث بدون اي خوف او تردد نخرج ابطال بفضل مجوهدات الاساتذه اللذين هم علي اعلي مستوي من الخبره و الكفائه المطلوبه لعمل البيئه المناسبه للعلاج و التحسن </p>
+                    <p class="section-title pr-5"><span class="pr-2">Get to know us more</span></p>
+                    <h1 class="mb-4">The best center for our children</h1>
+                    <p>Our goal is to help our children live a normal life full of happiness through their ability to write and speak without any fear or hesitation.</p>
                     <div class="row pt-2 pb-4">
                         <div class="col-6 col-md-4">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" style=" height: 200px;" src="img/photos/photo17.jpeg" alt="">
                         </div>
                         <div class="col-6 col-md-8">
                             <ul class="list-inline m-0">
                                 <li class="py-2 border-top border-bottom"><i
-                                        class="fa fa-check text-primary mr-3"></i>جلسات تخاطب و تنميه مهارات</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>صعوبات تعلم و تعديل سلوك</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>
-                                    اختبار ذكاء و ارشاد نفسي</li>
+                                        class="fa fa-check text-primary mr-3"></i>Speech and skills development sessions</li>
+                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Learning difficulties and behavior modification</li>
+                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Intelligence test and psychological counseling</li>
                             </ul>
                         </div>
                     </div>
-                    <a href="single.php" class="btn btn-primary mt-2 py-2 px-4">تعرف اكثر</a>
+                    <a href="single.php" class="btn btn-primary mt-2 py-2 px-4">know more</a>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- About End -->
 
 
@@ -125,9 +120,9 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>ساحه الالعاب</h4>
-                            <p class="m-0">نحن نمتلك البيئه المناسبه للتسليه لأطفالنا داخل المركز
-                                </p>
+                            <h4>PlayGround</h4>
+                            <p class="m-0">We have the right environment for our children to have fun inside the center
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -135,9 +130,9 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>اغاني و رقص</h4>
-                            <p class="m-0">بالطبع الاستماع هو من اهم طرق للتواصل لدي الاطفال التي نوفرهاه لهم
-                               </p>
+                            <h4> Music and Dance </h4>
+                            <p class="m-0">Of course, listening is one of the most important ways to deliver the materials
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -145,9 +140,9 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>روسومات و تشكيل</h4>
-                            <p class="m-0">مساعدتهم علي الرسم بالتالي يساعدهم علي الابداع طيله حياتهم
-                                </p>
+                            <h4>Drawings and formation</h4>
+                            <p class="m-0"> Helping them to draw thus helps them to be creative   
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -155,9 +150,9 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>نقل وامن</h4>
-                            <p class="m-0">نحن نوفر بالمركز طرق عديده للنقل الامن لأطفالنا
-                                </p>
+                            <h4>Transportation and security</h4>
+                            <p class="m-0">We provide the center with many ways of safe transportation for our children 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -165,9 +160,8 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>طعام صحي</h4>
-                            <p class="m-0">لاغني عن الطعام الصحي الذي يوفره المرز للاطفال و بذلك يساعدهم علي اكمال النشاط التعليمي و بناء الجسم
-                                </p>
+                            <h4>Healthy food</h4>
+                            <p class="m-0">I can't do without the healthy food that rice provides for children, thus helping them to complete the educational activity and build the body</p>
                         </div>
                     </div>
                 </div>
@@ -175,95 +169,93 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>رحله تعليميه</h4>
-                            <p class="m-0">نقوم بالعمل و الجهد لرحله تعليميه لأطفالنا لنجعلهم يعتادوا علي المدارس في المستقبل 
-                                </p>
+                            <h4>ducational trip</h4>
+                            <p class="m-0">We work and effort for an educational journey for our children to get them used to schools in the future</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Facilities ِEnd -->
 
 
     <!-- Team Start -->
-   
     <div class="container-fluid pt-5">
-            <div class="container">
-                <div class="text-center pb-2">
-                    <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
-                    <h1 class="mb-4">Meet Our Teachers</h1>
+        <div class="container">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
+                <h1 class="mb-4">Meet Our Teachers</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/photos/photo21.jpeg" alt="">
+                        <div
+                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <h4>Waleed ali</h4>
+                    <i>special breeding</i>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 text-center team mb-5">
-                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                            <img class="img-fluid w-100" src="img/photos/photo21.jpeg" alt="">
-                            <div
-                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                <div class="col-md-6 col-lg-3 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/photos/photo24" alt="">
+                        <div
+                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <h4>وليد علي</h4>
-                        <i>تربيه خاصه</i>
                     </div>
-                    <div class="col-md-6 col-lg-3 text-center team mb-5">
-                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                            <img class="img-fluid w-100" src="img/photos/photo24" alt="">
-                            <div
-                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                    <h4>Saied nada</h4>
+                    <i>Center manager</i>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/photos/photo31" alt="">
+                        <div
+                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <h4>سعيد ندا</h4>
-                        <i>مدير المركز</i>
                     </div>
-                    <div class="col-md-6 col-lg-3 text-center team mb-5">
-                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                            <img class="img-fluid w-100" src="img/photos/photo31" alt="">
-                            <div
-                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                    <h4> wafaa khames</h4>
+                    <i>Speech coach</i>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/photos/photo33" alt="">
+                        <div
+                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <h4>وفاء خميس</h4>
-                        <i>مدرب تخاطب</i>
                     </div>
-                    <div class="col-md-6 col-lg-3 text-center team mb-5">
-                        <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                            <img class="img-fluid w-100" src="img/photos/photo33" alt="">
-                            <div
-                                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                    href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <h4>رضا توفيق</h4>
-                        <i>اخصائي تدريب</i>
-                    </div>
+                    <h4>Reda tawfek</h4>
+                    <i>Training Specialist</i>
                 </div>
             </div>
         </div>
-                    
+    </div>        
     <!-- Team End -->
 
 

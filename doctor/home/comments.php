@@ -95,9 +95,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>        
                     <a href="logout.php" class="nav-item nav-link">LogOut</a>
-                    <a href="single.php" class="nav-item nav-link">Rehabilitation</a>
-                    <a href="blog.php" class="nav-item nav-link">Events</a>
-                    <a href="examples.php" class="nav-item nav-link">Examples</a>
+                    <a href="single.php" class="nav-item nav-link">Events</a>
+                    <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
                     <a href="assignment.php" class="nav-item nav-link">Assignments</a>
                     <a href="progress.php" class="nav-item nav-link">progress</a>
                     <a href="learning.php" class="nav-item nav-link">Learning</a>
@@ -112,12 +111,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
         <!-- Header Start -->
         <div class="container-fluid bg-primary mb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 font-weight-bold text-white">ابداء ملاحظه</h3>
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Comments &amp; notes</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0"><a class="text-white" href="index.php">الصفحه الرئيسيه</a></p>
-                    <p class="m-0 px-2">/</p>
-                    <p class="m-0">ملاحظات</p>
                 </div>
             </div>
         </div>
@@ -134,30 +130,30 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
-                    <h2 class="mb-4">اترك ملاحظه</h2>
+                    <h2 class="mb-4">Leave note</h2>
                     <form method="post">
                         <div class="form-group">
-                            <label for="doctor_name">اسم الطبيب</label>
+                            <label for="doctor_name">Doctor name</label>
                             <input name="doctor_name" type="text" class="form-control" id="doctor_name"
-                                placeholder="اسم الطبيب" required>
+                                placeholder="doctor name" required>
                         </div>
                         <div class="form-group">
-                            <label for="user_name">اسم الطفل</label>
-                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="اسم المريض"
+                            <label for="user_name">Patient name</label>
+                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="patient name"
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="subject_name">عنوان الموضوع</label>
+                            <label for="subject_name">Subject</label>
                             <input name="subject_name" type="text" class="form-control" id="subject_name"
-                                placeholder="الموضوع عن ..." required>
+                                placeholder="subject about ..." required>
                         </div>
                         <div class="form-group">
-                            <label for="note">الرساله</label>
+                            <label for="note">Message</label>
                             <textarea name="note" id="note" cols="30" rows="5" class="form-control"
-                                placeholder="اريد ان الفت الانتباه الي..." required></textarea>
+                                placeholder="I want to high light that..." required></textarea>
                         </div>
                         <div class="form-group mb-0">
-                            <input name="set_note" type="submit" value="اترك ملاحظه" class="btn btn-primary px-3">
+                            <input name="set_note" type="submit" value="Leave note" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>
@@ -171,11 +167,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         <div class="container-fluid pt-5">
             <div class="container">
                 <div class="bg-light p-5">
-                    <h2 class="mb-4">اعرض الملاحظات</h2>
+                    <h2 class="mb-4">List all notes</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="اسم الطبيب او المريض">
-                            <input name="list_notes" type="submit" value="اعرض جميع الملاحظات" class="btn btn-primary px-3">
+                            <input type="search" name="search_name" id="search_name" placeholder="Doctor / patient name">
+                            <input name="list_notes" type="submit" value="View all" class="btn btn-primary px-3">
                         </div>
                     </form>
                 </div>
@@ -235,11 +231,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="bg-light p-5">
 
                 <h1 style="color: aqua; margin: 30px; font-family: 'Times New Roman', Times, serif;"><?php echo $success_message ?></h1>
-                    <h2 class="mb-4">احذف الملاحظات</h2>
+                    <h2 class="mb-4">Remove notes</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="اسم الطبيب او المريض">
-                            <input name="remove_notes" type="submit" value="احذف جميع الملاحظات"
+                            <input type="search" name="search_name" id="search_name" placeholder="Doctor / patient name">
+                            <input name="remove_notes" type="submit" value="Remove"
                                 class="btn btn-primary px-3">
                         </div>
                     </form>

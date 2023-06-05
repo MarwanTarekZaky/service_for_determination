@@ -55,8 +55,7 @@
                             <a href="class.php" class="dropdown-item">Classes</a>
                             <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -69,18 +68,13 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-        <div class="row align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
-                <p class="text-white mb-4"></p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+    <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Our Team</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
     <!-- Header End -->
 
 
@@ -88,8 +82,8 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">اطبائنا</span></p>
-                <h1 class="mb-4">تعرف علي اطباء المركز</h1>
+                <p class="section-title px-5"><span class="px-2">Our doctor</span></p>
+                <h1 class="mb-4">Get to know about our doctors</h1>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
@@ -105,8 +99,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>محمد عادل</h4>
-                    <i>سلوكيات الاطفال</i>
+                    <h4>mohamed adel</h4>
+                    <i>children's behaviour</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -121,8 +115,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>سعيد ندا</h4>
-                    <i>مدير المركز</i>
+                    <h4>Saied nadaa</h4>
+                    <i>Cenetr manager</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -137,8 +131,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>وليد علي</h4>
-                    <i>تربيه خاصه</i>
+                    <h4>Waleed ali</h4>
+                    <i>Special treatment</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -153,8 +147,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>محمد عجوه</h4>
-                    <i>اضطراب التوحد</i>
+                    <h4>Mohamed aguah</h4>
+                    <i>Autistic disorder</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -169,8 +163,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>وفاء خميس</h4>
-                    <i>مدرب تخاطب</i>
+                    <h4>wafaa khames</h4>
+                    <i>Speech coach </i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -185,8 +179,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>رضا توفيق</h4>
-                    <i>اخصائي تدريب</i>
+                    <h4>Reda tawfek</h4>
+                    <i>Training Specialist</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -201,8 +195,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>محمد سليمان</h4>
-                    <i>نسا و توليد</i>
+                    <h4>Mohamed soliman</h4>
+                    <i>Obstetrics and gynecology</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
@@ -217,8 +211,8 @@
                                 href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h4>حازم مطر</h4>
-                    <i>الاخصائي الاجتماعي</i>
+                    <h4>Hazem mater</h4>
+                    <i>Social Specialist</i>
                 </div>
             </div>
         </div>
@@ -230,65 +224,54 @@
     <div class="container-fluid py-5">
         <div class="container p-0">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">اراء</span></p>
-                <h1 class="mb-4">ماذا يقول اولياء الأمور!</h1>
+                <p class="section-title px-5"><span class="px-2">pinions</span></p>
+                <h1 class="mb-4">What do parents say!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        ابني كان لديه متلازمه دون و بفضلهم قد تم الاعتياد عليهاه 
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>My son had Down Syndrome and thanks to them he is getting used to it</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-1.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>ولي امر </h5>
+                            <h5>In loco parentis</h5>
                             <i></i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        بفضل الاستاذ الاستشاري قد تم توعيتي اثناء فتره الحمل
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>Thanks to the consultant professor, I was sensitized during pregnancy</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-2.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>ربه منزل</h5>
+                            <h5>housewife</h5>
                             <i> </i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        انا اشيد بالقوه و الاتقان لجوده التعليم التي يحصل عليهاه الطلبه
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>I attest to the strength and mastery of the quality of education that students receive</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-3.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>استاذ جامعه</h5>
+                            <h5>professor</h5>
                             <i></i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        اخي لم يعد لديه الخوف من التحدث و التعامل مع الاخريين بفضل البرنامج العلاجي
-                    </div>
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>My brother no longer has the fear of speaking and dealing with others.Thanks to the treatment program</div>
                     <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-4.jpg" style="width: 70px; height: 70px;" alt="Image">
+                        
                         <div class="pl-3">
-                            <h5> اخ لمريض</h5>
+                            <h5>Patient's brother</h5>
                             <i></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>   
     <!-- Testimonial End -->
 
 

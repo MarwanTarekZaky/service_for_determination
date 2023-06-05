@@ -79,8 +79,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -93,18 +92,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-        <div class="row align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
-                <p class="text-white mb-4"></p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+    <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Learning</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
         <!-- Header End -->
 
 
@@ -137,11 +131,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container-fluid pt-5 pb-3">
                 <div class="container">
                     <div class="text-center pb-2">
-                        <p class="section-title px-5"><span class="px-2">اسم الطبيب:
+                        <p class="section-title px-5"><span class="px-2">Doctor:
                                 <?php echo $doctor_name ?>
                             </span></p>
                         <br><br>
-                        <h1 class="mb-4"> عنوان الدرس :
+                        <h1 class="mb-4">Lesson :
                             <?php echo $lesson_name ?>
                         </h1>
                     </div>
@@ -196,7 +190,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container-fluid pt-5 pb-3">
                 <div class="container">
                     <div class="text-center pb-2">
-                        <p class="section-title px-5"><span class="px-2">مقاطع تعليميه</span></p>
+                        <p class="section-title px-5"><span class="px-2">Tutorial clips</span></p>
                         <h1 class="mb-4"> </h1>
                     </div>
                     <div class="row portfolio-container">
@@ -228,7 +222,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container-fluid pt-5 pb-3">
                 <div class="container">
                     <div class="text-center pb-2">
-                        <p class="section-title px-5"><span class="px-2"> الصوتيات الدراسيه</span></p>
+                        <p class="section-title px-5"><span class="px-2">Tutorial voices</span></p>
                         <h1 class="mb-4"> </h1>
                     </div>
                     <div class="row portfolio-container">
@@ -255,7 +249,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             <div class="container-fluid pt-5 pb-3">
                 <div class="container">
                     <div class="text-center pb-2">
-                    <h1 class="mb-4">  الواحب المنزلي</h1>
+                    <h1 class="mb-4">Assignment</h1>
                     <br><br>
                         <p class="section-title px-5"><span class="px-2"> <?php echo $assignment ?> </span></p>
                         <br><br>

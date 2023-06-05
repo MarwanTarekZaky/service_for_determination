@@ -55,8 +55,7 @@
                             <a href="class.php" class="dropdown-item">Classes</a>
                             <a href="team.php" class="dropdown-item">Our Team</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
-                            <a href="https://form.123formbuilder.com/6371643/auction-donation-form" class="dropdown-item">Donation</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -69,18 +68,13 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-        <div class="row align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
-                <p class="text-white mb-4"></p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+    <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Gallery</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
     <!-- Header End -->
 
 
@@ -88,8 +82,8 @@
     <div class="container-fluid pt-5 pb-3">
         <div class="container">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">ملتقطات</span></p>
-                <h1 class="mb-4">صور ابنائنا بالمركز</h1>
+                <p class="section-title px-5"><span class="px-2">Pickers</span></p>
+                <h1 class="mb-4">Our Patient's photos</h1>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">

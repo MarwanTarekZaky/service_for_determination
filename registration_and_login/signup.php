@@ -28,7 +28,7 @@ if ($conn->connect_error) {
         VALUES ('$name', '$email', '$pass', $number, $disease_type)";
         
         if ($conn->query($sql) === TRUE) {
-          echo "<h1>New record created successfully</h1>";
+          echo "<h1>New Account created successfully</h1>";
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -47,7 +47,7 @@ if ($conn->connect_error) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>أنشاء مستخدم</title>
+    <title>Create user</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -65,27 +65,27 @@ if ($conn->connect_error) {
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">انشاء مستخدم جديد</h2>
+                        <h2 class="form-title"> Create new user</h2>
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="الاسم" required minlength="4" maxlength="25"/>
+                                <input type="text" name="name" id="name" placeholder="Name" required minlength="4" maxlength="25"/>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="الايميل" required/>
+                                <input type="email" name="email" id="email" placeholder="email" required/>
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="الرقم السري" required />
+                                <input type="password" name="pass" id="pass" placeholder="password" required />
                             </div>
                         
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1"><strong>فئه المرض</strong></label>
+                                <label for="exampleFormControlSelect1"><strong>disease_type</strong></label>
                                 
                                 <div class="form-group">
                                     <label for="number"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="number" id="number" placeholder="رقم الهاتف" required/>
+                                    <input type="text" name="number" id="number" placeholder="phone number" required/>
                                 </div>
                                 <br>
                                 <br>
@@ -98,19 +98,14 @@ if ($conn->connect_error) {
                                     <option value="3">3</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term"value="agree" class="agree-term" />
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>انا اوافق علي كافه الشروط
-                                     <a href="#" class="term-service">سياسات الخدمه</a></label>
-                            </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="انشاء" />
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Create" />
                             </div>
                         </form>
                     </div>
                     <div class="signup-image">
                         <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="login.php" class="signup-image-link">بالفعل مستخدم</a>
+                        <h1 style=""><a href="login.php" class="signup-image-link" style="text-decoration: none; color: aqua; font-size: xx-large;">Alerady user</a></h1>
                     </div>
                 </div>
             </div>

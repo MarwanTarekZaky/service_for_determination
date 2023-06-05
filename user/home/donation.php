@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-
+    <link rel="stylesheet" type="text/css" href="donation/style.css" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -54,9 +54,8 @@
                             <a href="about.php" class="dropdown-item">About Us</a>
                             <a href="class.php" class="dropdown-item">Classes</a>
                             <a href="team.php" class="dropdown-item">Our Team</a>
-                            <a href="gallery.php" class="dropdown-item">Gallery</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
-                            <a href="examples.php" class="dropdown-item">Examples</a>
+                            <a href="donation.php"class="dropdown-item">Donation</a>
                         </div>
                     </div>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
@@ -69,32 +68,54 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-        <div class="row align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left">
-                <h4 class="text-white mb-4 mt-5 mt-lg-0">center for special education </h4>
-                <h1 class="display-3 font-weight-bold text-white">Welcome to Our center</h1>
-                <p class="text-white mb-4"></p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/header.png" alt="">
+    <div class="container-fluid bg-primary mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+                <h3 class="display-3 font-weight-bold text-white">Donation</h3>
+                <div class="d-inline-flex text-white">
+                </div>
             </div>
         </div>
-    </div>
     <!-- Header End -->
 
 
-   
 
-   
-    <!-- main Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-           
-            
-        </div>
+
+    <div id="container">
+  <div id="header">
+    <h1>Children support</h1>
+  </div>
+ 
+  <div id="content">
+    <h2>Your help means effect ... </h2>
+    <div id="added-div1">
+      <h3 class="leftcol">Volunteering</h3>
+      <p>Support is not just about giving money, it can be a hand help to achive the required goals and give a child smile ...When there is us it means the child would not feel like alone anymore <a href="#"><br></a> <br><br>I wanted to let you know what an outstanding job I think you will do with the children you work with. They will respond to you, and that's probably due to how patient you are with them. I can hear their reading skills improving and their confidence growing with each Volunteering session, even with the ones that struggle the most. The children will be so lucky to have you as a tutor, and so will we.
+
+Thank you so much!</p>
+      <h3 class="linksheading">link to contact for donation</h3>
+      <div class="sidecontainer">
+        <ul class="sidenavlist">
+          <li><a href="contact.php">Contact-Us</a></li>
+        </ul>
+      </div>
+      <h3 class="linksheading">Another title</h3>
+      <p> Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus.Nullam quis pede. Nunc aliquam ligula non justo. <a href="#">Curabitur</a> sit amet lectus. Nullam tempor. Maecenas semper lobortis nibh. Nulla dapibus volutpat lorem. </p>
     </div>
-    <!-- main End -->
+    <div id="added-div-2">
+      <h3>Right Column</h3>
+      <p><img class="floatright" src="donation/house.gif" alt="" /> Two column free-hand style template for any children theme website. Donec tempor, tellus ut vestibulum feugiat, odio turpis <a href="#">posuere</a> enim, nec imperdiet diam purus non libero. Curabitur dolor massa, suscipit et, volutpat ac, bibendum ut, dolor. Maecenas pharetra. Vivamus consectetuer, tellus semper congue laoreet, sapien risus rhoncus mi, eget bibendum velit nunc nec lorem.Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus.</p>
+      <p>Curabitur dolor massa, suscipit et, volutpat ac, bibendum ut, dolor. Maecenas pharetra. Vivamus consectetuer, tellus semper congue laoreet, sapien risus rhoncus mi, eget bibendum velit nunc nec lorem.Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus. <a href="#">tellus semper</a> was used which has its own license.</p>
+      <p class="bottom">Curabitur dolor massa, suscipit et, volutpat ac, bibendum ut, dolor. Maecenas pharetra. Vivamus consectetuer, tellus semper congue laoreet, sapien risus rhoncus mi, eget bibendum velit nunc nec lorem.Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus. <a href="#">tellus semper</a> was used which has its own license.</p>
+    </div>
+    <div id="footer">
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+
 
 
     <!-- Footer Start -->
@@ -163,7 +184,7 @@
                 All rights reserved to the Faculty of Computing and Artificial Intelligence,<a class="text-primary font-weight-bold" href="http://fcih.helwan.edu.eg/">Helwan University</a>
             </p>
         </div>
-    </div>
+    </div>      
     <!-- Footer End -->
 
 
