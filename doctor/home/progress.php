@@ -180,11 +180,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
                         if ($res = mysqli_query($conn, $sql)) {
                             if (mysqli_num_rows($res) > 0) {
-                                echo "<table>";
+                                echo "<div class='container'>";
+                                echo "<table class='table table-striped'>";
                                 echo "<tr>";
-                                echo "<th>Patient </th>";
-                                echo "<th>Lesson</th>";
-                                echo "<th>Grade</th>";
+                                echo "<th scope='col'>Patient </th>";
+                                echo "<th scope='col'>Lesson</th>";
+                                echo "<th scope='col'>Grade</th>";
                                 echo "</tr>";
                                 while ($row = mysqli_fetch_array($res)) {
                                     echo "<tr>";
@@ -194,6 +195,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                     echo "</tr>";
                                 }
                                 echo "</table>";
+                                echo "</div>";
                                 mysqli_free_result($res);
                             } else {
                                 echo "No Matching records are found.";

@@ -173,6 +173,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                 <div class='position-relative overflow-hidden mb-2'>
                                 <img class='img-fluid w-100' src='" . $imageURL . "' alt='' />     
                                 <br>
+                                <br>
                                 </div>
                                 </div>"; ?>
 
@@ -204,7 +205,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                 
                                 <video src='" . $location . "' controls width='320px' height='320px' ></video>     
                                 <br>
-                            
+                                <br>
                                 </div>
                                 </div>";
 

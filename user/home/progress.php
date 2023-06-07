@@ -21,6 +21,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         //echo "Connected successfully";
     }
 
+   
+
  ?>
 
 <!DOCTYPE html>
@@ -113,7 +115,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <h2 class="mb-4">List rates</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="Patient name">
                             <input name="list_grade" type="submit" value="List all rates" class="btn btn-primary px-3">
                         </div>
                     </form>
@@ -128,18 +129,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <div class="bg-light p-5">
                     <?php if (isset($_POST['list_grade'])) {
 
-                        $search_name = $_POST['search_name'];
+                        // $search_name = $_POST['search_name'];
+                        $search_name = $_SESSION['name'];
 
                         $sql = "SELECT  user_name, lesson_name, grade FROM grades WHERE  user_name = '$search_name' ";
 
 
                         if ($res = mysqli_query($conn, $sql)) {
                             if (mysqli_num_rows($res) > 0) {
-                                echo "<table>";
+                                echo "<div class='container'>";
+                                echo "<table class='table table-striped'>";
                                 echo "<tr>";
-                                echo "<th>patient name</th>";
-                                echo "<th>Subject </th>";
-                                echo "<th>Rate</th>";
+                                echo "<th scope=‘col’>patient name</th>";
+                                echo "<th scope=‘col’>Subject </th>";
+                                echo "<th scope=‘col’>Rate</th>";
                                 echo "</tr>";
                                 while ($row = mysqli_fetch_array($res)) {
                                     echo "<tr>";
@@ -149,6 +152,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                                     echo "</tr>";
                                 }
                                 echo "</table>";
+                                echo "</div>";
                                 mysqli_free_result($res);
                             } else {
                                 echo "No rates fot this patient";

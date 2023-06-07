@@ -27,7 +27,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
     if (isset($_POST['set_lesson'])) {
 
-        $doctor_name = $_POST['doctor_name'];
+        // $doctor_name = $_POST['doctor_name'];
+        $doctor_name = $_SESSION['name'];
         $lesson_name = $_POST['lesson_name'];
         $disease_type = $_POST['disease_type'];
         $text_content = $_POST['text_content'];
@@ -176,11 +177,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <h1
                         style="display: block; width: 100%; margin: 50px; font-family: 'Times New Roman', Times, serif; color: cadetblue;">Add educational content</h1>
                     <form method="post" enctype='multipart/form-data'>
-                        <div class="form-group">
-                            <label for="doctor_name">Doctor name</label>
-                            <input name="doctor_name" type="text" class="form-control" id="doctor_name"
-                                placeholder="doctor name ..." required>
-                        </div>
                         <div class="form-group">
                             <label for="lesson_name">Lesson name</label>
                             <input name="lesson_name" type="text" class="form-control" id="lesson_name"

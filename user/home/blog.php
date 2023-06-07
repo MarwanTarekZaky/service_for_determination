@@ -124,7 +124,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         echo "<div class='col-lg-4 col-md-6 mb-4 portfolio-item first'>
                             <div class='position-relative overflow-hidden mb-2'>
                             
-                             <video src='" . $location . "' controls width='320px' height='320px' ></video>     
+                             <video  src='" . $location . "' controls width='320px' height='320px' ></video>     
                              <br>
                             <span>" . $name . "</span>
                             </div>

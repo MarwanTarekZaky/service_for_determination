@@ -106,12 +106,16 @@
                                 <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">08:00 - 10:00</div>
                             </div>
-                            <div class="row">
+                            <div class="row border-bottom">
                                 <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
                                 <div class="col-6 py-1">$290 / month</div>
                             </div>
+                            <div class="row border-bottom">
+                                <div class="col-6 py-1 text-right border-right"><strong>Type of disease</strong></div>
+                                <div class="col-6 py-1">1 </div>
+                            </div>
                         </div>
-                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
@@ -134,12 +138,16 @@
                                 <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">12:00 - 1:00</div>
                             </div>
-                            <div class="row">
+                            <div class="row border-bottom">
                                 <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
                                 <div class="col-6 py-1">$200 / month</div>
                             </div>
+                            <div class="row border-bottom">
+                                <div class="col-6 py-1 text-right border-right"><strong>Type of disease</strong></div>
+                                <div class="col-6 py-1">2 </div>
+                            </div>
                         </div>
-                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
+                       
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
@@ -162,12 +170,16 @@
                                 <div class="col-6 py-1 text-right border-right"><strong>Lesson time</strong></div>
                                 <div class="col-6 py-1">04:00 - 10:00</div>
                             </div>
-                            <div class="row">
+                            <div class="row border-bottom">
                                 <div class="col-6 py-1 text-right border-right"><strong>Program fee</strong></div>
                                 <div class="col-6 py-1">$350 / month</div>
                             </div>
+                            <div class="row border-bottom">
+                                <div class="col-6 py-1 text-right border-right"><strong>Type of disease</strong></div>
+                                <div class="col-6 py-1">3 </div>
+                            </div>
                         </div>
-                        <a href="class.php" class="btn btn-primary px-4 mx-auto mb-4">Book now</a>
+                        
                     </div>
                 </div>
             </div>
@@ -189,7 +201,7 @@
                         <li class="py-2"><i class="fa fa-check text-success mr-3"></i>A safe environment for children inside the center</li>
                         <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Accredited by the higher centers of affairs Book now</li>
                     </ul>
-                    <a href="#BOOKNOW" class="btn btn-primary mt-4 py-2 px-4">book now</a>
+                    
                 </div>
                 <div id="BOOKNOW" class="col-lg-5">
                     <div class="card border-0">

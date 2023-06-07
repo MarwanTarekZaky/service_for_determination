@@ -23,7 +23,7 @@ $success_message = '';
         if(isset($_POST['set_note'])){
     
             $doctor_name = $_POST['doctor_name'];
-            $user_name = $_POST['user_name'];
+            $user_name = $_SESSION['name'];
             $subject_name = $_POST['subject_name'];
             $note = $_POST['note'];
             
@@ -144,13 +144,6 @@ $success_message = '';
                             <input name="doctor_name" type="text" class="form-control" id="doctor_name"
                                 placeholder="Doctor name" required>
                         </div>
-
-                        <div class="form-group">
-                            <label for="user_name">Patient name</label>
-                            <input name="user_name" type="text" class="form-control" id="user_name" placeholder="patient name"
-                                required>
-                        </div>
-
                         <div class="form-group">
                             <label for="subject_name">Topic</label>
                             <input name="subject_name" type="text" class="form-control" id="subject_name"
@@ -181,7 +174,6 @@ $success_message = '';
                     <h2 class="mb-4">Display notes</h2>
                     <form method="post">
                         <div class="form-group mb-0">
-                            <input type="search" name="search_name" id="search_name" placeholder="Doctor name">
                             <input name="list_notes" type="submit" value="List all notes" class="btn btn-primary px-3">
                         </div>
                     </form>
@@ -197,18 +189,20 @@ $success_message = '';
                 <div class="bg-light p-5">
                     <?php if (isset($_POST['list_notes'])) {
 
-                        $search_name = $_POST['search_name'];
+                        // $search_name = $_POST['search_name'];
+                           $search_name = $_SESSION['name'];
 
-                        $sql = "SELECT doctor_name, user_name, note FROM notes WHERE doctor_name = '$search_name' ";
+                        $sql = "SELECT doctor_name, user_name, note FROM notes WHERE user_name = '$search_name' ";
 
 
                         if ($res = mysqli_query($conn, $sql)) {
                             if (mysqli_num_rows($res) > 0) {
-                                echo "<table>";
+                                echo "<div class='container'>";
+                                echo "<table class='table table-striped'>";
                                 echo "<tr>";
-                                echo "<th>Doctor name</th>";
-                                echo "<th>User name</th>";
-                                echo "<th>note</th>";
+                                echo "<th scope='col'>Doctor name</th>";
+                                echo "<th scope='col'>User name</th>";
+                                echo "<th scope='col'>note</th>";
                                 echo "</tr>";
                                 while ($row = mysqli_fetch_array($res)) {
                                     echo "<tr>";
@@ -218,6 +212,7 @@ $success_message = '';
                                     echo "</tr>";
                                 }
                                 echo "</table>";
+                                echo "</div>";
                                 mysqli_free_result($res);
                             } else {
                                 echo "No Matching records are found.";

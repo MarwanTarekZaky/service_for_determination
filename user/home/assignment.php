@@ -31,7 +31,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             $name = $_FILES['file']['name'];
             $target_dir = "../../videos";
             $templol = "/";
-            $user_name = $_POST['user_name'];
+            // $user_name = $_POST['user_name'];
+            $user_name = $_SESSION['name'];
             $target_file = $target_dir . $_FILES["file"]["name"];
 
             // Select file type
@@ -78,7 +79,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
         $fileName = basename($_FILES["file"]["name"]);
         $targetFilePath = $targetDir . $fileName;
         $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
-        $user_name=$_POST["user_name"];
+        // $user_name=$_POST["user_name"];
+        $user_name = $_SESSION['name'];
     }
     if (isset($_POST["upload_image"]) && !empty($_FILES["file"]["name"])) {
         // Allow certain file formats
@@ -111,7 +113,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     if(isset($_POST['upload_audio']))
     {
         $file_name = $_FILES['audio_file']['name'];
-        $user_name = $_POST['user_name'];
+        // $user_name = $_POST['user_name'];
+        $user_name = $_SESSION['name'];
     
         if($_FILES['audio_file']['type']=='audio/mpeg' || $_FILES['audio_file']['type']=='audio/mpeg3' || $_FILES['audio_file']['type']=='audio/x-mpeg3' || $_FILES['audio_file']['type']=='audio/mp3' || $_FILES['audio_file']['type']=='audio/x-wav' || $_FILES['audio_file']['type']=='audio/wav'){
 
@@ -248,8 +251,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <h2 class="mb-4">upload video</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='file'>
-                        <input type="text" name="user_name" id="user_name" placeholder="patient name" required>
-                        <input type='submit' value='upload' name='but_upload'>
+                        <input type='submit' class="btn btn-primary" value='upload' name='but_upload'>
                     </form>
                 </div>
             </div>
@@ -267,8 +269,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <h2 class="mb-4">upload image</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='file'>
-                        <input type="text" name="user_name" id="user_name" placeholder="patient name" required>
-                        <input type='submit' value='upload' name='upload_image'>
+                        <input type='submit' class="btn btn-primary" value='upload' name='upload_image'>
                     </form>
                 </div>
             </div>
@@ -286,8 +287,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <h2 class="mb-4">upload voice</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='audio_file' id="audio_file">
-                        <input type="text" name="user_name" id="user_name" placeholder="patient name" required>
-                        <input type='submit' value='upload' name='upload_audio'>
+                        <input type='submit' class="btn btn-primary" value='upload' name='upload_audio'>
                     </form>
                 </div>
             </div>

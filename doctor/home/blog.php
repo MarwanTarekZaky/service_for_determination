@@ -158,7 +158,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <h2 class="mb-4">Add video</h2>
                     <form method="post" action="" enctype='multipart/form-data'>
                         <input type='file' name='file' />
-                        <input type='submit' value='Upload' name='but_upload'>
+                        <input type='submit' value='Upload' name='but_upload' class="btn btn-primary px-3">
                     </form>
                 </div>
             </div>

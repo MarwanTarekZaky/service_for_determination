@@ -148,7 +148,7 @@
                     <div class="col-lg-5 mb-5">
                         <p>The management of the center is happy to communicate with all its customers in order to get the best and raise the level of service that we provide through all the activities within the center, and you can communicate through the following means</p>
                         <div class="d-flex">
-                            <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                            <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle"
                                 style="width: 45px; height: 45px;"></i>
                             <div class="pl-3">
                                 <h5><address></address></h5>
@@ -156,7 +156,7 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                            <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle"
                                 style="width: 45px; height: 45px;"></i>
                             <div class="pl-3">
                                 <h5>email</h5>
@@ -164,7 +164,7 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                            <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-white fa-x rounded-circle"
                                 style="width: 45px; height: 45px;"></i>
                             <div class="pl-3">
                                 <h5>Phone number</h5>
@@ -172,7 +172,7 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+                            <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-white fa-2x rounded-circle"
                                 style="width: 45px; height: 45px;"></i>
                             <div class="pl-3">
                                 <h5>Working hours</h5>
