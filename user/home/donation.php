@@ -95,17 +95,24 @@ Thank you so much!</p>
       <h3 class="linksheading">link to contact for donation</h3>
       <div class="sidecontainer">
         <ul class="sidenavlist">
-          <li><a href="contact.php">Contact-Us</a></li>
+          <li><a href="contact.php" class="btn btn-info">Contact-Us</a></li>
         </ul>
       </div>
-      <h3 class="linksheading">Another title</h3>
-      <p> Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus.Nullam quis pede. Nunc aliquam ligula non justo. <a href="#">Curabitur</a> sit amet lectus. Nullam tempor. Maecenas semper lobortis nibh. Nulla dapibus volutpat lorem. </p>
+      <h3 class="linksheading"> To remember</h3>
+      <p> I wanted to let you know that you are doing an outstanding job and extremely glad what you are doing to help others. Doing a volunteering job is beautiful work to do. Thank you so much. </p>
     </div>
     <div id="added-div-2">
-      <h3>Right Column</h3>
-      <p><img class="floatright" src="donation/house.gif" alt="" /> Two column free-hand style template for any children theme website. Donec tempor, tellus ut vestibulum feugiat, odio turpis <a href="#">posuere</a> enim, nec imperdiet diam purus non libero. Curabitur dolor massa, suscipit et, volutpat ac, bibendum ut, dolor. Maecenas pharetra. Vivamus consectetuer, tellus semper congue laoreet, sapien risus rhoncus mi, eget bibendum velit nunc nec lorem.Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus.</p>
-      <p>Curabitur dolor massa, suscipit et, volutpat ac, bibendum ut, dolor. Maecenas pharetra. Vivamus consectetuer, tellus semper congue laoreet, sapien risus rhoncus mi, eget bibendum velit nunc nec lorem.Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus. <a href="#">tellus semper</a> was used which has its own license.</p>
-      <p class="bottom">Curabitur dolor massa, suscipit et, volutpat ac, bibendum ut, dolor. Maecenas pharetra. Vivamus consectetuer, tellus semper congue laoreet, sapien risus rhoncus mi, eget bibendum velit nunc nec lorem.Nam sollicitudin, massa sit amet feugiat interdum, neque neque fermentum metus. <a href="#">tellus semper</a> was used which has its own license.</p>
+      <h3>donation</h3>
+      <p><img class="floatright" src="donation/house.gif" alt="" />Donation can literally make a chane in the way that we achive a degree of progress , They are several way of donation that the patient we treatment and heal and the cenetr of Speech specialist can take from you...thats includes money and other things that you may use it in your regular day like machine or even a chair that would be so useful in the way we use rather than be unused in some places. children are the fufure support that we will receive from 
+      .</p>
+      
+      <p>, so there is no doubt that any change in their learning for make them have a better life will definitely affect our future commuinty.</p>
+      <p class="bottom">we in our center have a variable needs that change with the time
+          if you decide that you want to contribute in any way for donation,
+           You can talk to any doctor in the center of contact the center managment unit,
+            We provide an easy method for donation remotely.</p>
+            <img src="img/photos/donate.jpeg"  style=" height: 400px;"alt="donation method">
+        
     </div>
     <div id="footer">
     </div>
