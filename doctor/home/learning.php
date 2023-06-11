@@ -142,7 +142,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>        
                     <a href="logout.php" class="nav-item nav-link">LogOut</a>
-                    <a href="single.php" class="nav-item nav-link">Events</a>
                     <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
                     <a href="comments.php" class="nav-item nav-link">Comments</a>
                     <a href="assignment.php" class="nav-item nav-link">Assignments</a>

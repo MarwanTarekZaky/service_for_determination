@@ -68,7 +68,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                     <div class="navbar-nav font-weight-bold mx-auto py-0">
                         <a href="../../registration_and_login/delete_user.php" class="nav-item nav-link">Delete User</a>
                         <a href="logout.php" class="nav-item nav-link">LogOut</a>
-                        <a href="single.php" class="nav-item nav-link">Events</a>
+                        
                         <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
                         <a href="examples.php" class="nav-item nav-link">Examples</a>
                         <a href="comments.php" class="nav-item nav-link">Comments</a>
@@ -191,8 +191,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                             while ($row = mysqli_fetch_assoc($fetchImages)) {
                                 $imageURL = '../../assignment_images/' . $row["file_name"];
                                 echo "<div class='col-lg-4 col-md-6 mb-4 portfolio-item first'>
-                                <div class='position-relative overflow-hidden mb-2'>
-                                <img src='" . $imageURL . "' alt='' />     
+                                <div class='position-relative  mb-2'>
+                                <img class='w-100'  src='" . $imageURL . "' alt='' />     
                                 <br>
                                 <br>
                                 </div>

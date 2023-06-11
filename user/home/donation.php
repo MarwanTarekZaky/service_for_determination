@@ -105,13 +105,15 @@ Thank you so much!</p>
       <h3>donation</h3>
       <p><img class="floatright" src="donation/house.gif" alt="" />Donation can literally make a chane in the way that we achive a degree of progress , They are several way of donation that the patient we treatment and heal and the cenetr of Speech specialist can take from you...thats includes money and other things that you may use it in your regular day like machine or even a chair that would be so useful in the way we use rather than be unused in some places. children are the fufure support that we will receive from 
       .</p>
+      <img src="img/photos/donate.jpeg"  class=" w-75 p-3" alt="donation method">
+      
       
       <p>, so there is no doubt that any change in their learning for make them have a better life will definitely affect our future commuinty.</p>
       <p class="bottom">we in our center have a variable needs that change with the time
           if you decide that you want to contribute in any way for donation,
            You can talk to any doctor in the center of contact the center managment unit,
             We provide an easy method for donation remotely.</p>
-            <img src="img/photos/donate.jpeg"  style=" height: 400px;"alt="donation method">
+            
         
     </div>
     <div id="footer">
