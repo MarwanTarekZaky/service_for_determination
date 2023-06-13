@@ -70,7 +70,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                         <a href="logout.php" class="nav-item nav-link">LogOut</a>
                         
                         <a href="blog.php" class="nav-item nav-link">Rehabilitation</a>
-                        <a href="examples.php" class="nav-item nav-link">Examples</a>
                         <a href="comments.php" class="nav-item nav-link">Comments</a>
                         <a href="progress.php" class="nav-item nav-link">progress</a>
                         <a href="learning.php" class="nav-item nav-link">Learning</a>
